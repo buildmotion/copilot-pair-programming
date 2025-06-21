@@ -1,0 +1,19 @@
+{
+  "name": "copilot-pair-programming",
+  "version": "1.0.0",
+  "description": "Resources to go beyond autocomplete - master AI pair programming and content generation with Github Copilot.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "marp presentation/comprehensive-talk-outline.md --output presentation/comprehensive-talk-outline.html",
+    "pdf": "marp presentation/comprehensive-talk-outline.md --pdf --allow-local-files --output \"presentation/Beyond-Autocomplete-GitHub-Copilot-Talk.pdf\"",
+    "slides": "marp presentation/comprehensive-talk-outline.md --theme default --output presentation/comprehensive-talk-outline.html",
+    "present": "cd presentation && marp comprehensive-talk-outline.md --watch --theme default",
+    "server": "cd presentation && marp . --server --port 8080 --theme default"
+  },
+  "repository": "git@github.com:buildmotion/copilot-pair-programming.git",
+  "author": "Matt Vaughn <matt.vaughn@buildmotion.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@marp-team/marp-cli": "4.2.0"
+  }
+}
