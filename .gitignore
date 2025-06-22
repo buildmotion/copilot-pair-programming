@@ -193,3 +193,6 @@ pids
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
