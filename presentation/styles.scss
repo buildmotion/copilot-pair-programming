@@ -1,4 +1,4 @@
-/* custom-theme.css */
+/* custom-theme.css - Optimized for Content Density */
 :root {
     --color-background: #f7f7f7;
     --color-primary: #333;
@@ -10,18 +10,106 @@
 section {
     background-color: var(--color-background);
     color: var(--color-primary);
+    padding: 40px 60px 30px 60px; /* Reduced padding for more space */
+    font-size: 24px; /* Slightly smaller base font */
+    line-height: 1.3; /* Tighter line spacing */
 }
 
+/* Compact headings */
 h1 {
     color: #ff7f50;
-    /* This is a coral orange color */
+    font-size: 2.5em; /* Reduced from default 3em */
+    margin-bottom: 0.3em;
+    margin-top: 0;
 }
 
-h2,
+h2 {
+    color: var(--color-secondary);
+    font-size: 1.8em; /* Reduced from default 2.2em */
+    margin-bottom: 0.4em;
+    margin-top: 0.6em;
+}
+
 h3 {
     color: var(--color-secondary);
+    font-size: 1.4em; /* Reduced from default 1.6em */
+    margin-bottom: 0.3em;
+    margin-top: 0.5em;
 }
 
+/* Compact lists */
+ul, ol {
+    margin: 0.5em 0;
+    padding-left: 1.2em;
+}
+
+li {
+    margin-bottom: 0.2em; /* Tighter list spacing */
+}
+
+/* Compact paragraphs */
+p {
+    margin: 0.4em 0;
+}
+
+/* Compact tables */
+table {
+    font-size: 0.9em; /* Smaller table text */
+    margin: 0.5em 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 0.4em 0.6em; /* Reduced cell padding */
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Compact code blocks */
+pre {
+    font-size: 0.8em; /* Smaller code text */
+    margin: 0.5em 0;
+    padding: 0.8em;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+code {
+    font-size: 0.9em;
+    background-color: #f0f0f0;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+
+/* Links */
 a {
     color: var(--color-tertiary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Special emphasis for snarky comments */
+em {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95em;
+}
+
+/* Compact blockquotes for speaker notes preview */
+blockquote {
+    border-left: 4px solid var(--color-secondary);
+    margin: 0.5em 0;
+    padding: 0.3em 0 0.3em 1em;
+    background-color: #fafafa;
+    font-size: 0.85em;
+    font-style: italic;
 }

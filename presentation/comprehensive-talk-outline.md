@@ -9,6 +9,8 @@ class:
 
 # Beyond Autocomplete: Mastering AI Pair Programming with GitHub Copilot
 
+---
+
 ## Microsoft Denver Developer Day
 
 June 27, 2025
@@ -16,29 +18,32 @@ June 27, 2025
 <!-- 
 Total Duration: 50 minutes
 Talk Type: Live Demo & Interactive Presentation
-Audience: Mixed skill levels - beginners to advanced developers
-Focus: Practical, hands-on approach with real-world examples
+Target Audience: Microsoft Developer Conference Attendees
+Session Level: Intermediate
 -->
 
 ---
 
-## What we will cover
+---
+
+## What we will cover *(Or: How I Learned to Stop Worrying and Love Our AI Overlords)*
 
 ### Key Topics
 
-1. **Introduction to GitHub Copilot**: What it is, how it works, and its evolution.
-2. **Core Features**: Autocomplete, Chat Integration, Comment-to-Code, Multi-file Awareness, Test Generation.
-3. **Custom Copilot Instructions**: Tailored workflows and directives for specific tasks.
-4. **Advanced Techniques**: Prompt engineering and workflow integration.
-5. **Security Considerations**: Best practices for safe AI-assisted coding.
-6. **Real-World Applications**: Industry use cases and success stories.
+1. **Introduction to GitHub Copilot**: What it is, how it works, and its evolution *(Spoiler: It evolved faster than JavaScript frameworks)*
+2. **Core Features**: Autocomplete, Chat Integration, Comment-to-Code *(Because talking to your computer is totally normal now)*
+3. **Custom Copilot Instructions**: Teach the AI your bad habits *(So it can replicate them consistently)*
+4. **Advanced Techniques**: Prompt engineering *(A.K.A. "How to sweet-talk a robot")*
+5. **Security Considerations**: Best practices for safe AI-assisted coding *(Because 30% vulnerable code is apparently "acceptable")*
+6. **Real-World Applications**: Industry success stories *(And the ones they don't want you to hear about)*
 
 <!-- 
 Speaker Notes:
-- Provide a roadmap for the session to set expectations.
-- Highlight the mix of theory, demos, and practical takeaways.
-- Emphasize the interactive nature of the presentation.
-- Mention that the session will cover both beginner-friendly and advanced topics.
+- *deadpan* "We're covering 6 topics in 50 minutes. Don't worry, I talk fast when I'm being sarcastic"
+- *gesture to screen* "Look at this agenda - it's like a greatest hits of 'Things That Didn't Exist When I Started Coding'"
+- *pause* "We'll have demos, theory, and practical takeaways. It's like a developer conference, but with more self-deprecating humor"
+- *serious moment* "Whether you're AI-curious or already in a committed relationship with ChatGPT, there's something here for everyone"
+- *back to snark* "Fair warning: I've been coding since '98, so I have opinions. And today, you get to hear them all"
 -->
 
 ---
@@ -63,24 +68,25 @@ Speaker Notes:
 - Share brief anecdote: "Started with Visual InterDev|Notepad|DreamWeaver and FTP uploads, now we have AI writing code with us"
 - Acknowledge the room's diverse experience levels: "Whether you're AI-curious or already prompting like a pro"
 - Reference my Angular Architecture book experience: "Just like architectural patterns evolved from backend to frontend, AI assistance is the next logical step"
-- Set interactive tone: "This isn't just a demo session - we're going to transform how you think about coding collaboration"
+- Set interactive tone: "This is a transformation session - we're going to change how you think about coding collaboration"
 - Technical credibility: "Having authored enterprise Angular patterns, I've seen what works at scale - and AI pair programming is game-changing"
 - Promise value: "By the end, you'll have practical workflows you can implement Monday morning"
 -->
 
 ---
 
-## Coding Olympics
+## Coding Olympics *(Or: How We Got Here Without Crying)*
 
 ![coding timeline](asseets/coding-timeline.png)
 
 <!-- 
 Speaker Notes:
-- Evolution of IDE
-  - syntax highlighting: "We started with basic syntax highlighting in text editors"
-  - IntelliSense: "Then came IntelliSense, which was a game-changer for code completion"
-  - AI Pair Programming: "Now we have AI that not only completes code but understands context and intent"
-- Emphasize the rapid pace of change: "In just a few years
+- *nostalgic tone* "Look at this beautiful timeline of human progress..."
+- *point to syntax highlighting* "We started with Notepad. Syntax highlighting was REVOLUTIONARY. Color-coded text! We thought we were living in the future!"
+- *point to IntelliSense* "Then came IntelliSense. Suddenly your IDE knew more about your code than you did. Should have been a warning sign, honestly"
+- *point to AI* "And now we have AI that not only completes your code but judges your life choices while doing it"
+- *pause for effect* "In 25 years we went from 'What's a website?' to 'Hey AI, write me a backend.' That's either amazing progress or terrifying acceleration, depending on your perspective"
+- *timing note: let the absurdity sink in before moving on*
 -->
 
 ---
@@ -108,152 +114,166 @@ Speaker Notes:
 
 ---
 
-### Brief History & Evolution
+### Brief History & Evolution *(Or: How GitHub Became Our AI Training Ground)*
 
-- **June 2021**: Preview launch (invitation only)
-- **June 2022**: General availability
-- **2023**: Copilot X with Chat integration
-- **December 2024**: Free tier launched with 2,000 completions/month
-- **2025**: Multi-model support (GPT-4o, Claude 3.5 Sonnet)
+- **June 2021**: Preview launch *(invitation only - because nothing says 'stable' like beta testing)*
+- **June 2022**: General availability *(Translation: "We think it won't destroy your codebase... probably")*
+- **2023**: Copilot X with Chat integration *(Now you can argue with your AI assistant!)*
+- **December 2024**: Free tier launched *(Microsoft realized not everyone has enterprise budgets)*
+- **2025**: Multi-model support *(GPT-4o, Claude 3.5 Sonnet - because one AI overlord wasn't enough)*
 
 <!-- 
 Speaker Notes:
-- Highlight the rapid evolution and GitHub's commitment to the platform
-- Mention the recent free tier as lowering barriers to entry for developers
-- Note that it's constantly improving with new models (GPT-4o, Claude 3.5 Sonnet, with o1 and Gemini arriving soon)
-- Emphasize how this evolution shows Microsoft/GitHub's long-term investment in AI-assisted development
-- Connect to research: The tool has matured from experimental to production-ready in just 4 years
+- *lean back* "Four years. Four years from 'experimental' to 'we trust this with production code.' That's either impressive or terrifying"
+- *count on fingers* "June '21 to June '22 - one year of beta testing. In JavaScript terms, that's like 47 major version releases"
+- *smirk* "Free tier in December 2024 - Microsoft finally figured out the 'freemium' model. Only took them... forever"
+- *raise eyebrow* "Multi-model support means if one AI doesn't break your code, we've got backups ready to finish the job"
+- *serious moment* "But honestly? This evolution shows serious commitment to making AI-assisted development mainstream"
 -->
 
 ---
 
-### The Research Behind the Hype
+### The Research Behind the Hype *(Or: Numbers Don't Lie, But Marketing Does)*
 
-- **55.8% faster task completion** (GitHub/Keio University study)
-- **75% of developers feel more fulfilled** using Copilot
-- **46% reported writing less boilerplate code**
-- **60%+ of VS Code users** with Copilot use it daily
+- **55.8% faster task completion** *(Translation: More time for coffee breaks and existential dread)*
+- **75% of developers feel more fulfilled** *(The other 25% are probably writing COBOL)*
+- **46% reported writing less boilerplate code** *(Finally, someone else can write the boring stuff)*
+- **60%+ of VS Code users** with Copilot use it daily *(Addiction is a strong word... but accurate)*
 
 <!-- 
 Speaker Notes:
-- Start with: "Let's talk numbers - not marketing numbers, but peer-reviewed research"
-- 55.8% improvement is from controlled studies with hundreds of developers
-- The fulfillment metric is crucial: "This isn't just about speed, it's about job satisfaction"
-- Less boilerplate = more time for creative problem-solving and architecture
-- Daily usage shows sticky adoption - once developers try it, they integrate it into their workflow
-- Ask audience: "How many of you spend time on repetitive coding tasks you wish you could automate?"
-- Position research as validation: "The productivity gains are real and measurable"
-- Transition: "But enough talking about it - let me show you how to get these results yourself"
+- *serious voice* "Let's talk numbers - not marketing numbers, but peer-reviewed research from actual humans"
+- *pause* "55.8% faster... that's significant. That's like getting an extra day per week, or in developer terms, enough time to actually read the documentation"
+- *knowing look* "75% more fulfilled - this measures job satisfaction, not speed. Turns out, when AI handles the grunt work, humans get to do the fun stuff"
+- *raise eyebrow* "46% less boilerplate. If you've ever written a CRUD API, you understand why this matters. Nobody dreams of writing getter/setter methods"
+- *lean forward* "60% daily usage - that's not trial adoption, that's dependency. Once you taste the AI-assisted life, you can't go back"
+- *reality check* "These aren't Microsoft marketing stats - this is peer-reviewed research. The productivity gains are real, measurable, and slightly addictive"
 -->
 
 ---
 
 ## 🛠️ Getting Started - Live Demo (7 minutes)
 
-### Setup in Under 60 Seconds
+### Setup in Under 60 Seconds *(Assuming Your Microsoft Account Cooperates)*
 
-- **Live Demo**: Fresh VS Code installation
+- **Live Demo**: Fresh VS Code installation *(What could go wrong?)*
 
-1. Open VS Code
-2. Click Copilot icon in sidebar
-3. Sign in with GitHub account
-4. Start coding immediately
+1. Open VS Code *(Please don't crash...)*
+2. Click Copilot icon in sidebar *(It's the robot icon - how fitting)*
+3. Sign in with GitHub account *(Microsoft owns your soul now)*
+4. Start coding immediately *(And questioning your life choices)*
 
 <!-- 
 Speaker Notes:
-- Do this live to show how frictionless it is
-- Emphasize no complex configuration needed
-- If demo fails, have screenshots as backup
-- Show the setup is truly under a minute
+- *look at screen confidently* "Alright, let's do this live. What's the worst that could happen?"
+- *click through* "VS Code, Copilot icon... and now we pray to the demo gods that my internet connection holds"
+- *while signing in* "GitHub account login - remember when Microsoft bought GitHub for 7.5 billion? This is why. They played the long game"
+- *if it works* "Look at that - under 60 seconds! Either I'm getting good at this, or Microsoft's UX team finally learned something"
+- *if it fails* "And this, folks, is why we have backup screenshots. Technology: making liars out of all of us since 1995"
+- *regardless of outcome* "The point is - when it works, it's genuinely this simple. No complex configuration, no PhD in machine learning required"
 -->
 
 ---
 
-### Your First Copilot Experience
+### Your First Copilot Experience *(Or: How to Feel Obsolete in 30 Seconds)*
 
-- **Live Demo**: Create a new JavaScript file
-- Type a comment: `// Function to calculate compound interest`
-- Watch Copilot suggest the entire function
-- Accept suggestion and test it
+- **Live Demo**: Create a new JavaScript file *(Brave choice)*
+- Type a comment: `// Function to calculate compound interest` *(Watch the magic happen)*
+- Watch Copilot suggest the entire function *(It's not mind-reading... or is it?)*
+- Accept suggestion and test it *(Spoiler: It probably works better than your code)*
 
 <!-- 
 Speaker Notes:
-- Choose a universally understood example (compound interest)
-- Show the suggestion overlay and how to accept/reject
-- Demonstrate that it's not just completing syntax but understanding intent
-- Test the generated code to show it actually works
+- *open new file* "New JavaScript file. I'm going with compound interest because it's universally understood, unlike my career choices"
+- *type comment slowly* "Just a comment... and watch this..."
+- *pause for Copilot suggestion* "There it is. An entire function. From a comment. This used to be called 'magic,' now it's called 'Tuesday'"
+- *accept suggestion* "Tab to accept, and... boom. Ready-to-run code that I didn't write but somehow understand"
+- *run the code* "Let's test it... and it works. This is either amazing or terrifying, depending on your job security concerns"
+- *look at audience* "Show of hands - how many of you just felt a little threatened by a comment completing itself?"
 -->
 
 ---
 
 ## 🚀 Core Capabilities Deep Dive (12 minutes)
 
-### Copilot Modes & Features
+---
 
-| Feature | What It Does | When to Use |
-|---------|-------------|-------------|
-| **Autocomplete** | Suggests code as you type | Daily coding, function completion |
-| **Chat Integration** | Ask questions, get explanations | Understanding unfamiliar code |
-| **Comment-to-Code** | Natural language → working code | Rapid prototyping |
-| **Multi-file Awareness** | Understands project context | Complex refactoring |
-| **Test Generation** | Creates unit tests from functions | Improving code coverage |
+### Copilot Modes & Features *(Or: Your New AI Swiss Army Knife)*
+
+| Feature | What It Does | When to Use | *Reality Check* |
+|---------|-------------|-------------|----------------|
+| **Autocomplete** | Suggests code as you type | Daily coding | *When you forgot how for-loops work... again* |
+| **Chat Integration** | Ask questions, get explanations | Understanding code | *When Stack Overflow is down* |
+| **Comment-to-Code** | Natural language → working code | Rapid prototyping | *When you're too lazy to type* |
+| **Multi-file Awareness** | Understands project context | Complex refactoring | *Knows your codebase better than you do* |
+| **Test Generation** | Creates unit tests from functions | Improving coverage | *When you remember testing exists* |
 
 <!-- 
 Speaker Notes:
-- Walk through each feature with purpose
-- Emphasize when to use each mode
-- Set up for the upcoming demos
+- *scan the table* "Five features, five ways to question your value as a human developer"
+- *point to autocomplete* "Autocomplete - for when you can't remember if it's 'forEach' or 'for each' or 'forEachAsync' or whatever JavaScript invented this week"
+- *point to chat* "Chat integration - it's like rubber duck debugging, but the duck talks back and has opinions"
+- *point to multi-file* "Multi-file awareness is legitimately scary. It reads your entire project and understands the relationships better than the person who wrote it"
+- *pause* "But seriously, each of these modes has specific use cases. The trick is knowing when to use which one"
+- *transition* "Let me show you what I mean..."
 -->
 
 ---
 
-### Autocomplete in Action
+### Autocomplete in Action *(Or: Watch AI Build Your React Component While You Question Your Career)*
 
-- **Demo**: Build a React component from scratch
-- Show how Copilot predicts entire JSX structures
-- Demonstrate CSS-in-JS suggestions
-- Show prop typing suggestions
+- **Demo**: Build a React component from scratch *(What could possibly go wrong?)*
+- Show how Copilot predicts entire JSX structures *(Mind-reading, but legal)*
+- Demonstrate CSS-in-JS suggestions *(Because regular CSS wasn't confusing enough)*
+- Show prop typing suggestions *(TypeScript: Making simple things complicated since 2012)*
 
 <!-- 
 Speaker Notes:
-- Choose a universally understood component (e.g., TodoList or UserCard)
-- Start with just a comment: "// React component for displaying user profile"
-- Show how Copilot understands framework patterns and suggests appropriate props
-- Highlight context awareness: imports, existing components, TypeScript interfaces
-- Demonstrate the intelligence beyond simple autocomplete - understanding component architecture
-- If demo fails, have a pre-recorded backup showing the same progression
-- Time estimate: 3-4 minutes maximum to maintain audience engagement
+- *open new React file* "Let's build a user profile component. I'll start with a comment and let AI do the heavy lifting"
+- *type comment* "// React component for displaying user profile... and watch this"
+- *as suggestions appear* "Look at this - it's suggesting props, JSX structure, even CSS-in-JS. It understands React patterns better than most bootcamp graduates"
+- *accept suggestions* "It knows about imports, component architecture, even accessibility patterns. This reads like a senior developer looking over your shoulder and understanding your entire project"
+- *if demo works* "And there we have it - a complete component in under 2 minutes. Either I'm getting really good at this, or AI is making me redundant"
+- *if demo fails* "And that's why we have backup plans! The point is - when it works, it's genuinely this intelligent"
+- *timing note: keep this under 4 minutes to maintain engagement*
 -->
 
 ---
 
-### Chat Integration
+### Chat Integration *(Or: Finally, A Pair Programming Partner Who Doesn't Judge Your Code... Out Loud)*
 
-- **Demo**: Select confusing code and ask Copilot Chat to explain
-- Ask: "How can I optimize this function?"
-- Ask: "Generate unit tests for this component"
-- Show inline chat vs. sidebar chat
+- **Demo**: Select confusing code and ask Copilot Chat to explain *(The digital rubber duck)*
+- Ask: "How can I optimize this function?" *(Prepare for ego damage)*
+- Ask: "Generate unit tests for this component" *(Because you forgot testing exists)*
+- Show inline chat vs. sidebar chat *(Two ways to feel inadequate)*
 
 <!-- 
 Speaker Notes:
-- Use code that's genuinely complex or unclear
-- Show different types of questions you can ask
-- Demonstrate both explanation and generation capabilities
+- *select some gnarly code* "Let's pick some deliberately confusing code. Copilot Chat, explain what this nightmare does"
+- *wait for response* "And it actually understands it. Not only understands it, but explains it better than the person who wrote it"
+- *ask optimization question* "Now let's ask for optimization suggestions... prepare for your feelings to get hurt"
+- *read suggestions* "Look at these suggestions. It's like having a code review from someone who actually read the documentation"
+- *demonstrate test generation* "And test generation - because let's be honest, how many of you write tests AFTER the code is working?"
+- *show both interfaces* "Inline chat for quick questions, sidebar for longer conversations. It's like choosing between texting and phone calls, but for code"
 -->
 
 ---
 
-### Multi-file Awareness
+### Multi-file Awareness *(Or: When AI Knows Your Project Better Than You Do)*
 
-- **Demo**: Create a utility function in one file
-- Show how Copilot suggests imports in another file
-- Demonstrate project-wide context understanding
+- **Demo**: Create a utility function in one file *(The setup)*
+- Show how Copilot suggests imports in another file *(The mind-reading)*
+- Demonstrate project-wide context understanding *(The existential crisis)*
 
 <!-- 
 Speaker Notes:
-- This is where Copilot really shines vs. simpler tools
-- Show it's not just about single file completion
-- Emphasize the intelligence of cross-file suggestions
+- *create utility function* "Let me create a simple utility function in one file..."
+- *switch to another file* "Now watch what happens when I try to use it in another file..."
+- *start typing* "I haven't even imported it yet, but Copilot already knows... look at this suggestion"
+- *show import suggestion* "It's suggesting the import statement, the function call, even proper TypeScript types"
+- *pause for effect* "This thing reads your ENTIRE project. Every file, every import, every variable name. It knows your codebase structure better than you do"
+- *reality check* "This understands architectural relationships and project-wide dependencies in ways that simple autocomplete tools never could"
+- *slightly ominous* "It's either really impressive or mildly terrifying that AI can navigate your project better than the intern you hired last month"
 -->
 
 ---
@@ -360,24 +380,23 @@ Speaker Notes:
 
 ## 💼 Real-World Use Cases (10 minutes)
 
-### Slide: Industry Applications
+### Industry Applications *(Or: How The Corporate World Learned to Stop Worrying and Love AI)*
 
-- **Shopify**: Developer onboarding acceleration
-- **Azure SDK Teams**: Documentation generation
-- **Startups**: MVP prototyping speed
-- **Open Source**: Test coverage and PR summaries
-- **Education**: Interactive learning and concept explanation
+- **Shopify**: Developer onboarding acceleration *(Because human mentors are expensive)*
+- **Azure SDK Teams**: Documentation generation *(Finally, docs that make sense)*
+- **Startups**: MVP prototyping speed *(Move fast and let AI break things)*
+- **Open Source**: Test coverage and PR summaries *(Because maintainers have lives... maybe)*
+- **Education**: Interactive learning *(Teaching students to rely on AI from day one)*
 
 <!-- 
 Speaker Notes:
-- These are real examples from the research, not hypothetical use cases
-- Shopify specifically uses Copilot in developer bootcamps to accelerate engineer onboarding
-- Azure SDK teams leverage it for writing example usage documentation for SDK libraries
-- Startups report significant velocity improvements in MVP development cycles
-- Open source maintainers use it for PR summaries and improving test coverage
-- Educational institutions are using it as an interactive learning tool for teaching syntax and algorithms
-- Connect to audience: "Think about your current role - which of these scenarios applies to your team?"
-- Transition: "Let me show you some of these use cases in action"
+- *serious tone* "These aren't hypothetical use cases - these are real companies solving real problems"
+- *point to Shopify* "Shopify uses Copilot in developer bootcamps. Turns out AI can onboard engineers faster than senior developers who are 'too busy'"
+- *point to Azure* "Azure SDK teams use it for documentation. If you've ever read Microsoft docs that actually made sense, this might be why"
+- *point to startups* "Startups love it for MVP development. Nothing says 'disruption' like letting AI write your minimum viable product"
+- *point to open source* "Open source maintainers use it for PR summaries. Because reading other people's code is painful enough without having to understand it"
+- *point to education* "Educational institutions are using it to teach coding. We're literally training the next generation to depend on AI from day one"
+- *pause* "The question isn't whether AI will change how we work - it's whether we'll adapt fast enough"
 -->
 
 ---
@@ -465,74 +484,91 @@ Speaker Notes:
 
 ## ⚠️ Security & Best Practices (3 minutes)
 
-### Slide: Security Considerations
+### Security Considerations *(Or: How to Sleep at Night Knowing 30% of Your Code is Broken)*
 
-- **~30% of AI-generated code** may contain vulnerabilities
-- **Common issues**: XSS, insecure randomness, hardcoded secrets
-- **Solution**: Use Copilot Chat to review and improve security
-- **Best practice**: Always review, test, and validate AI suggestions
+- **~30% of AI-generated code** may contain vulnerabilities *(Only 30%? Those are rookie numbers!)*
+- **Common issues**: XSS, insecure randomness, hardcoded secrets *(The greatest hits of bad programming)*
+- **Solution**: Use Copilot Chat to review and improve security *(Fight fire with fire)*
+- **Best practice**: Always review, test, and validate AI suggestions *(Revolutionary concept: actually checking your work)*
 
 <!-- 
 Speaker Notes:
-- Reference the specific research from your studies: "This isn't marketing FUD - it's from peer-reviewed research"
-- Be honest about limitations to build trust with the audience
-- Emphasize that this isn't anti-AI, it's pro-responsible AI use
-- Mention that Copilot Chat can fix ~55% of identified security issues when prompted correctly
-- Show this positions AI as part of the security solution, not just the problem
-- Connect to enterprise concerns: "This is why Business/Enterprise plans include governance controls"
-- Emphasize: "The goal is human-AI collaboration, not blind automation"
+- *serious voice* "Let's talk about the elephant in the room - security vulnerabilities in AI-generated code"
+- *pause* "30% vulnerable code. That sounds bad until you realize that's probably better than the average JavaScript project on GitHub"
+- *deadpan* "Common issues include XSS, insecure randomness, and hardcoded secrets. You know, the same stuff humans have been screwing up for decades"
+- *slight smirk* "The solution? Use AI to fix the problems AI created. It's like fighting fire with fire, but with more JSON"
+- *reality check* "Here's the thing - this isn't marketing FUD. This is peer-reviewed research. 30% is a real number from real studies"
+- *lean forward* "But here's the plot twist: Copilot Chat can fix about 55% of the security issues it identifies. So the AI can both create AND solve the problem"
+- *serious moment* "The goal isn't blind automation. It's human-AI collaboration. You're still responsible for what ships to production"
+- *final point* "This is why Enterprise plans have governance controls. Because somebody has to be the adult in the room"
 -->
 
 ---
 
-### Live Demo: Security Review with Copilot
+### Security Review with Copilot *(Or: Using AI to Fix AI's Mistakes)*
 
-- **Demo**: Generate code with potential security issues
-- Use Copilot Chat to identify and fix vulnerabilities
-- Show how to ask security-focused questions
+- **Demo**: Generate code with potential security issues *(This shouldn't be hard)*
+- Use Copilot Chat to identify and fix vulnerabilities *(The circle of AI life)*
+- Show how to ask security-focused questions *(Politely asking AI not to hack you)*
 
 <!-- 
 Speaker Notes:
-- Create a realistic example (password handling, user input)
-- Show how Copilot can be part of the security solution
-- Emphasize defense in depth approach
+- *roll up sleeves* "Let's create some intentionally bad code and see if AI can save us from ourselves"
+- *start typing* "I'm going to write some password handling code that would make a security professional cry..."
+- *generate bad code* "There we go - hardcoded secrets, no input validation, SQL injection waiting to happen. Tuesday afternoon code"
+- *use Copilot Chat* "Now let's ask Copilot to review this disaster... 'How can I improve the security of this code?'"
+- *read response* "Look at this - it's identifying the exact problems and suggesting fixes. It's like having a security consultant who doesn't charge $500 an hour"
+- *implement fixes* "Following its suggestions... and we've gone from 'hack me please' to 'reasonably secure.'"
+- *reality check* "The key is asking the right questions. 'Make this more secure' works better than 'make this work.'"
+- *wrap up* "Defense in depth - use AI to create, AI to review, humans to make the final call"
 -->
 
 ---
 
 ## 💰 Pricing & Plans (2 minutes)
 
-### Slide: Choose Your Plan
+### Choose Your Plan *(Or: How Much Is Your Soul Worth?)*
 
-| Plan | Features | Price | Best For |
-|------|----------|-------|----------|
-| **Free** | 2,000 completions/mo, 50 chats, GPT-4o + Claude | $0 | Individual developers, learning |
-| **Pro** | Unlimited usage, advanced models, previews | $10/mo | Professional developers |
-| **Business** | Team management, policy controls | Custom | Development teams |
-| **Enterprise** | Governance, codebase indexing, private models | Custom | Large organizations |
+| Plan | Features | Price | Best For | *Reality Check* |
+|------|----------|-------|----------|----------------|
+| **Free** | 2,000 completions/mo, 50 chats | $0 | Individual developers | *Perfect for those 2,000 lines you write per month... right?* |
+| **Pro** | Unlimited usage, advanced models | $10/mo | Professional developers | *For when 2,000 isn't enough to break production* |
+| **Business** | Team management, policy controls | Custom | Development teams | *When you need to control how your team fails* |
+| **Enterprise** | Governance, codebase indexing | Custom | Large organizations | *Translation: "If you have to ask, you can't afford it"* |
 
 <!-- 
 Speaker Notes:
-- Emphasize the generous free tier for getting started
-- Pro plan is excellent value for professional developers
-- Business/Enterprise add governance and security features
+- *scan the table* "Four tiers of AI dependency, from 'curious' to 'completely committed'"
+- *point to free* "Free tier gives you 2,000 completions per month. That sounds like a lot until you realize you hit Tab 47 times in one React component"
+- *point to Pro* "$10 a month for unlimited AI assistance. That's less than your daily coffee budget, but potentially more addictive"
+- *point to Business* "Business plan adds team management and policy controls. Because somebody needs to manage how your team uses AI to break things"
+- *point to Enterprise* "Enterprise pricing is 'custom' - which is corporate speak for 'we'll charge whatever your budget allows'"
+- *reality check* "The free tier is genuinely generous. Microsoft is playing the long game - get you hooked, then worry about monetization later"
 -->
 
 ---
 
 ## 🎯 Key Takeaways & Action Items (3 minutes)
 
-### Slide: What You've Learned Today
+### What You've Learned Today *(Or: How to Embrace Your New AI Overlords)*
 
-✅ **Copilot is a coding partner, not just autocomplete**  
-✅ **Free tier removes barriers to getting started**  
-✅ **Multiple interaction modes for different scenarios**  
-✅ **Real productivity gains with proper usage**  
-✅ **Security awareness and best practices matter**  
-✅ **Prompt engineering improves results significantly**
+✅ **Copilot is a coding partner** *(The partner who never argues but occasionally writes terrible code)*  
+✅ **Free tier removes barriers** *(Microsoft's gateway drug strategy)*  
+✅ **Multiple interaction modes** *(Five different ways to feel inadequate)*  
+✅ **Real productivity gains** *(55.8% faster at writing code that may or may not work)*  
+✅ **Security awareness matters** *(Because 30% vulnerable code is apparently "acceptable")*  
+✅ **Prompt engineering improves results** *(Talking to computers is now a professional skill)*
 
 <!-- 
 Speaker Notes:
+- *look at the list* "Six key takeaways from our journey into AI-assisted development"
+- *point to partner* "It's a coding partner - the kind that knows everything but sometimes gives you completely wrong answers with absolute confidence"
+- *point to free tier* "Free tier removes barriers, which is Microsoft's way of getting you hooked before you realize how dependent you've become"
+- *point to modes* "Multiple interaction modes give you different ways to collaborate with AI, or different ways to question your own skills"
+- *point to productivity* "Real productivity gains - 55.8% faster task completion, which means more time to debug the code AI wrote for you"
+- *point to security* "Security awareness matters because AI writes vulnerable code 30% of the time, but hey, that's probably better than the average Stack Overflow copy-paste"
+- *point to prompt engineering* "Prompt engineering - because apparently learning how to talk to computers is now a required skill for software developers"
+-->
 - Reinforce key concepts from the presentation
 - Emphasize practical next steps
 - Connect back to the "beyond autocomplete" theme
@@ -563,22 +599,22 @@ Speaker Notes:
 
 ## 🤔 Q&A Session (5 minutes)
 
-### Slide: Questions & Discussion
+### Questions & Discussion *(Or: Time to Air Your AI Grievances)*
 
-- **Share your experiences** with AI coding tools
-- **Ask about specific use cases** in your projects
-- **Discuss team adoption strategies**
-- **Explore advanced scenarios** we didn't cover
+- **Share your experiences** with AI coding tools *(Horror stories welcome)*
+- **Ask about specific use cases** in your projects *(How to break things more efficiently)*
+- **Discuss team adoption strategies** *(How to convince your team to join the AI revolution)*
+- **Explore advanced scenarios** we didn't cover *(Because 50 minutes isn't enough for existential dread)*
 
 <!-- 
 Speaker Notes:
-- Encourage sharing of experiences, not just questions
-- Be prepared for common questions about:
-  - Cost justification for teams
-  - Integration with existing workflows
-  - Concerns about code quality
-  - Privacy and enterprise usage
-- Have backup demos ready for specific requests
+- *open arms gesture* "Alright, time for the real talk. Who has questions, concerns, or AI horror stories to share?"
+- *anticipate common questions* "I'm expecting questions about job security, code quality, and whether AI will replace us all"
+- *job security question prep* "Someone's going to ask about job security. The answer is: 'AI won't replace developers, but developers using AI will replace developers not using AI.' You're welcome for that anxiety."
+- *cost justification prep* "Cost justification questions - $10/month per developer vs. productivity gains. Do the math, but also factor in the existential crisis"
+- *integration concerns* "Integration with existing workflows - it's actually easier than adopting a new JavaScript framework, which isn't saying much"
+- *privacy concerns* "Privacy and enterprise usage - yes, your code goes to the cloud. No, Microsoft probably isn't stealing your revolutionary to-do app idea"
+- *encourage sharing* "But seriously, I want to hear your experiences. The good, the bad, and the 'AI suggested this and it actually worked'"
 -->
 
 ---
@@ -655,17 +691,38 @@ Speaker Notes:
 
 ## 🎤 Meet the Speaker
 
-### About Matt Vaughn
+### About Matt Vaughn *(Or: How One Developer Survived 27 Years of Web Development)*
 
-- **Web Development Pioneer**: Matt built his first web application in 1998 and has been innovating ever since.
-- **Angular Enthusiast**: Author of "Angular Architecture" and host of "Angularlicious Podcast."
-- **Community Contributor**: Speaker at Angular Connect, local meetups, and international conferences.
-- **Personal Touch**: A Colorado native with a passion for jazz, tacos, and technology.
+- **Web Development Survivor**: Built his first web application in 1998 *(back when JavaScript was just a toy)*
+- **Angular Evangelist**: Author of "Angular Architecture" and host of "Angularlicious Podcast" *(because the world needed more Angular content)*
+- **Conference Circuit Regular**: Speaker at Angular Connect, local meetups *(and now Microsoft events, apparently)*
+- **Human Being**: Colorado native with passions for jazz, tacos, and making technology less terrible *(priorities in order)*
 
 <!-- Speaker Notes:
-- Matt Vaughn has over two decades of experience in web development, specializing in Angular and TypeScript.
-- He authored "Angular Architecture," a book that provides insights into modern front-end architecture.
-- Matt hosts "Angularlicious Podcast," where he shares best practices and enterprise patterns.
-- Highlight his contributions to the Angular community through workshops and talks.
-- Share his personal interests to connect with the audience: jazz, tacos, and his Colorado roots.
+- *self-deprecating tone* "A little about me - I've been writing web applications since 1998, which means I've made every mistake possible"
+- *gesture broadly* "I wrote a book about Angular architecture, host a podcast about enterprise patterns, and somehow convinced Microsoft to let me speak at their event"
+- *personal touch* "I'm from Colorado, I play jazz saxophone, and I have strong opinions about both tacos and TypeScript - not necessarily in that order"
+- *connect to presentation* "I've watched this industry evolve from 'web pages' to 'web applications' to 'AI writes your code.' It's been a wild ride"
+- *humble brag* "Twenty-seven years of web development has taught me one thing: the more things change, the more they stay broken in fascinating new ways"
+- *wrap up* "Thanks for letting me share some of that experience - and sarcasm - with you today"
 -->
+
+---
+
+## 🧪 Copilot Instruction Compliance Test
+
+<!-- 
+COPILOT TEST PROMPT:
+Write a brief section about "The Future of AI-Assisted Development" 
+that demonstrates our presentation style guidelines.
+This should test:
+1. Solar confidence (no expectation-subversion patterns)
+2. Snarky Bill Burr + Dave Chappelle + Samuel L. Jackson energy
+3. Direct statements without fluff
+4. Technical accuracy with comedic timing
+5. Active voice, no corporate speak
+-->
+
+### Testing AI Instruction Recognition
+
+<!-- Test prompt for Copilot: Complete this section following our style guidelines -->
