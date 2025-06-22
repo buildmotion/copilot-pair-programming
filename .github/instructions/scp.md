@@ -1,12 +1,12 @@
-# SCP (Smart Commit & Push) Workflow
+# `x -scp` (Smart Commit & Push) Workflow
 
 ## Overview
 
-The SCP workflow is a fully automated process for committing and pushing changes to a Git repository using GitHub Copilot. It adheres to Single Responsibility (SR) and Separation of Concerns (SoC) principles, using conventional commit standards.
+The `x -scp` workflow is a fully automated process for committing and pushing changes to a Git repository using GitHub Copilot. It adheres to Single Responsibility (SR) and Separation of Concerns (SoC) principles, using conventional commit standards.
 
 ## How to Use
 
-Simply type **"scp"** in the chat with GitHub Copilot. This is a direct command to Copilot that triggers the SCP workflow. Copilot will:
+Simply type **"`x -scp`"** in the chat with GitHub Copilot. This is a direct command to Copilot that triggers the `x -scp` workflow. Copilot will:
 
 1. Generate a single command line that performs all the necessary Git operations
 2. Execute this command automatically
@@ -20,10 +20,13 @@ Simply type **"scp"** in the chat with GitHub Copilot. This is a direct command 
 
 3. **Commit Changes**: Create a conventional commit message based on the analysis, including:
    - A properly formatted commit header with type, scope, and description
-   - A detailed body that summarizes the changes
    - Any necessary footers (breaking changes, etc.)
 
 4. **Push Changes**: Push the commit to the remote repository
+
+## Explicit Trigger for `x -scp` Command
+
+Typing "`x -scp`" in the chat explicitly triggers the `x -scp` workflow. Ensure that Copilot is configured to recognize this command and execute the workflow as described.
 
 ## Key Features
 
@@ -82,11 +85,10 @@ When you type "scp", Copilot will:
 
 ## Validation
 
-After Copilot executes the SCP workflow, you'll see:
+After executing the SCP workflow, validate the following:
 
-1. A summary of what Copilot did (staged, committed, pushed)
-2. The full commit message that was generated
-3. The Git command output showing successful push
+1. Run `git log -1` to view the latest commit and ensure it matches the generated commit message.
+2. Verify that the changes have been pushed to the remote repository by checking the repository's commit history.
 
 You can verify manually with:
 
@@ -114,6 +116,40 @@ If typing "scp" doesn't trigger the expected behavior:
 - Copilot will never include sensitive information in commit messages
 - Always review the generated commit message before confirming (if Copilot asks for confirmation)
 - Use `.gitignore` to exclude sensitive files from being committed
+
+## Enforcing Conventional Commit Compliance
+
+To ensure strict adherence to Conventional Commit standards:
+
+1. **Validation During Commit Generation**:
+   - Copilot will validate the generated commit message against the Conventional Commit format.
+   - If the message does not comply, Copilot will regenerate it until it meets the standard.
+
+2. **Error Handling**:
+   - If Copilot fails to generate a compliant message, it will notify the user and provide suggestions for manual correction.
+
+3. **Automation Enhancements**:
+   - Add a pre-commit hook to validate commit messages using a Conventional Commit linter.
+   - Ensure Copilot integrates with the linter to enforce compliance automatically.
+
+4. **User Review**:
+   - Always review the generated commit message before confirming (if Copilot asks for confirmation).
+
+### Example of Validation
+
+If Copilot generates a non-compliant message like:
+
+```plaintext
+update logging
+```
+
+It will automatically correct it to:
+
+```plaintext
+feat(logging): improve diagnostics and error handling
+```
+
+This ensures all commit messages follow the Conventional Commit format.
 
 ---
 

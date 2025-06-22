@@ -195,3 +195,23 @@ added a new login feature to the authentication module. this includes:
 
 breaking change: the authentication module now requires a new environment variable `auth_api_url`.
 ```
+
+# Enhanced AI Assistant Instructions
+
+## Available Instructions
+
+1. **Code Troubleshooting:** Refer to `ai-troubleshooting.instructions.md` for systematic debugging protocols.
+2. **Nx Workspace:** Refer to `nx.instructions.md` for Nx-specific guidelines.
+3. **Chat Log:** Refer to `chat-log.instructions.md` for logging the last chat exchange.
+
+## General Guidelines
+
+- Use `log -c` as a directive for Copilot to log the last chat exchange to the `documentation/chats` folder. This is not a terminal command but an instruction for Copilot to follow the steps outlined in `chat-log.instructions.md`.
+- Use `log -r` to log to the `documentation/research` folder. Refer to `ai-troubleshooting.instructions.md` for systematic research logging protocols.
+- Always follow the specific instruction relevant to the task.
+- Use structured responses and markdown formatting for clarity.
+- Provide suggestions for improving prompts to enhance learning and context.
+
+### `x -scp` Command - Smart Commit & Push
+
+Refer to the `scp.md` file for detailed instructions on using the `x -scp` workflow. This command automates the process of staging, committing, and pushing changes to a Git repository using GitHub Copilot.
