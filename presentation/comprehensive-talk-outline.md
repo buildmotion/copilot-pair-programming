@@ -28,7 +28,7 @@ Focus: Practical, hands-on approach with real-world examples
 
 1. **Introduction to GitHub Copilot**: What it is, how it works, and its evolution.
 2. **Core Features**: Autocomplete, Chat Integration, Comment-to-Code, Multi-file Awareness, Test Generation.
-3. **Live Demos**: Hands-on examples showcasing Copilot's capabilities.
+3. **Custom Copilot Instructions**: Tailored workflows and directives for specific tasks.
 4. **Advanced Techniques**: Prompt engineering and workflow integration.
 5. **Security Considerations**: Best practices for safe AI-assisted coding.
 6. **Real-World Applications**: Industry use cases and success stories.
@@ -43,35 +43,44 @@ Speaker Notes:
 
 ---
 
-## 🎯 Opening Hook (5 minutes)
+## 🎯 The Future is Now
 
-### Title + Welcome
+### Welcome to the Future of Development
 
 - **"Beyond Autocomplete: Mastering AI Pair Programming with GitHub Copilot"**
-- Matt Vaughn - BuildMotion
-- Microsoft Denver Developer Day
+- Matt Vaughn - BuildMotion | Angular Architect & Author
+- Microsoft Denver Developer Day 2025
+
+### The Developer Tools Evolution Journey
+
+- **From Syntax Highlighting → IntelliSense → AI Pair Programming**
+- Timeline visualization: Text editors → IDEs → AI-assisted coding
+- **Interactive Poll**: "How many of you are currently using AI coding tools daily?"
 
 <!-- 
 Speaker Notes:
-- Welcome audience and thank Microsoft for the opportunity
-- Set expectations: This is a hands-on, demo-heavy session
-- Acknowledge mixed skill levels in audience
-- Promise practical takeaways they can use immediately
+- Personal connection: "I've been building web applications since 1998 - literally watched this entire evolution unfold"
+- Share brief anecdote: "Started with Visual InterDev|Notepad|DreamWeaver and FTP uploads, now we have AI writing code with us"
+- Acknowledge the room's diverse experience levels: "Whether you're AI-curious or already prompting like a pro"
+- Reference my Angular Architecture book experience: "Just like architectural patterns evolved from backend to frontend, AI assistance is the next logical step"
+- Set interactive tone: "This isn't just a demo session - we're going to transform how you think about coding collaboration"
+- Technical credibility: "Having authored enterprise Angular patterns, I've seen what works at scale - and AI pair programming is game-changing"
+- Promise value: "By the end, you'll have practical workflows you can implement Monday morning"
 -->
 
 ---
 
-### The Evolution of Developer Tools
+## Coding Olympics
 
-- **From Syntax Highlighting → IntelliSense → AI Pair Programming**
-- Show timeline: Text editors → IDEs → AI-assisted coding
-- **Question to audience**: "How many of you are already using AI coding tools?"
+![coding timeline](asseets/coding-timeline.png)
 
 <!-- 
 Speaker Notes:
-- Get audience engagement early with a show of hands
-- Position Copilot as the next evolution, not a replacement for developers
-- Set up the narrative that we're witnessing a fundamental shift in how we code
+- Evolution of IDE
+  - syntax highlighting: "We started with basic syntax highlighting in text editors"
+  - IntelliSense: "Then came IntelliSense, which was a game-changer for code completion"
+  - AI Pair Programming: "Now we have AI that not only completes code but understands context and intent"
+- Emphasize the rapid pace of change: "In just a few years
 -->
 
 ---
@@ -80,20 +89,21 @@ Speaker Notes:
 
 ### What is GitHub Copilot?
 
-- **AI-powered coding assistant** from GitHub & OpenAI
-- **Trained on billions of lines** of public code
-- **Integrated directly** into VS Code, Visual Studio, JetBrains, CLI
-- **Context-aware**: Understands your project, files, and coding patterns
+- **AI-powered coding assistant** from GitHub & OpenAI *(Microsoft's $7.5B investment at work)*
+- **Trained on billions of lines** of "public" code *(wink wink)*
+- **Integrated directly** into your IDE *(because why leave when they know everything about you?)*
+- **Context-aware**: Reads your project like it's gossip *(and probably judges your naming conventions)*
 
 <!-- 
 Speaker Notes:
-- Emphasize that it's not magic - it's trained on real, public code repositories
-- Highlight the breadth: billions of lines means it understands patterns across languages and frameworks
-- Integration depth: not a plugin, but native integration that understands your entire development context
-- Context awareness is key differentiator: it's not just autocomplete, it understands your project structure, imports, existing code patterns
-- Address common misconception: "This isn't just glorified autocomplete - it's an AI that understands coding context"
-- Built on the GPT architecture but specifically trained for code generation and understanding
-- Mention it supports 40+ programming languages with varying degrees of proficiency
+- *deadpan delivery* "It's not magic, folks - it's just trained on billions of lines of code from GitHub repositories. You know... all that code you uploaded thinking it was 'private'?" *pause for effect* 
+- *slight smirk* "Microsoft bought GitHub in 2018 for 7.5 billion. Wonder how they got all that sweet, sweet training data, right?? I'm just saying..." *shrug*
+- *lean forward conspiratorially* "This isn't your grandpa's IntelliSense. This thing reads your entire project like it's binge-watching Netflix - understands your imports, your patterns, probably judges your variable names..."
+- *raise eyebrow* "They say it's 'context-aware.' Translation: it knows when you're about to write another nested ternary operator and judges you accordingly"
+- *serious tone shift* "But seriously though - this isn't glorified autocomplete. It's an AI that understands coding context better than most developers understand their own codebase" 
+- *back to snark* "Built on GPT architecture - you know, the same tech that confidently tells you there are 11 letters in 'strawberry.' But hey, at least it writes clean code!"
+- *pause* "Supports 40+ programming languages... because apparently JavaScript wasn't enough suffering for one lifetime" *wait for laughs*
+- *timing note: pause after each snarky comment to let it land, then transition smoothly to next point*
 -->
 
 ---
@@ -639,4 +649,23 @@ Speaker Notes:
 - Have multiple backup plans for each component
 - Practice the demo flow multiple times
 - Time each section to ensure proper pacing
+-->
+
+---
+
+## 🎤 Meet the Speaker
+
+### About Matt Vaughn
+
+- **Web Development Pioneer**: Matt built his first web application in 1998 and has been innovating ever since.
+- **Angular Enthusiast**: Author of "Angular Architecture" and host of "Angularlicious Podcast."
+- **Community Contributor**: Speaker at Angular Connect, local meetups, and international conferences.
+- **Personal Touch**: A Colorado native with a passion for jazz, tacos, and technology.
+
+<!-- Speaker Notes:
+- Matt Vaughn has over two decades of experience in web development, specializing in Angular and TypeScript.
+- He authored "Angular Architecture," a book that provides insights into modern front-end architecture.
+- Matt hosts "Angularlicious Podcast," where he shares best practices and enterprise patterns.
+- Highlight his contributions to the Angular community through workshops and talks.
+- Share his personal interests to connect with the audience: jazz, tacos, and his Colorado roots.
 -->
