@@ -32,7 +32,7 @@ This document outlines best practices for creating effective custom instructions
   ```markdown
   ## Instruction: Commit Changes
 
-  - Use the `x -scp` command to stage, commit, and push changes.
+  - Use the `cp scp` command to stage, commit, and push changes.
   - Ensure commit messages follow the Conventional Commits format.
   ```
 
@@ -93,7 +93,7 @@ This document outlines best practices for creating effective custom instructions
   ```markdown
   ## Instruction: Smart Commit & Push
 
-  - Use the `x -scp` command to automate the Git workflow.
+  - Use the `cp scp` command to automate the Git workflow.
   - Ensure all changes are staged and committed with a detailed message.
   ```
 

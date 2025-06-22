@@ -1,12 +1,12 @@
-# `x -scp` (Smart Commit & Push) Workflow
+# `cp scp` (Smart Commit & Push) Workflow
 
 ## Overview
 
-The `x -scp` workflow is a fully automated process for committing and pushing changes to a Git repository using GitHub Copilot. It adheres to Single Responsibility (SR) and Separation of Concerns (SoC) principles, using conventional commit standards.
+The `cp scp` workflow is a fully automated process for committing and pushing changes to a Git repository using GitHub Copilot. It adheres to Single Responsibility (SR) and Separation of Concerns (SoC) principles, using conventional commit standards.
 
 ## How to Use
 
-Simply type **"`x -scp`"** in the chat with GitHub Copilot. This is a direct command to Copilot that triggers the `x -scp` workflow. Copilot will:
+Simply type **"`cp scp`"** in the chat with GitHub Copilot. This is a direct command to Copilot that triggers the `cp scp` workflow. Copilot will:
 
 1. Generate a single command line that performs all the necessary Git operations
 2. Execute this command automatically
@@ -24,9 +24,9 @@ Simply type **"`x -scp`"** in the chat with GitHub Copilot. This is a direct com
 
 4. **Push Changes**: Push the commit to the remote repository
 
-## Explicit Trigger for `x -scp` Command
+## Explicit Trigger for `cp scp` Command
 
-Typing "`x -scp`" in the chat explicitly triggers the `x -scp` workflow. Ensure that Copilot is configured to recognize this command and execute the workflow as described.
+Typing "`cp scp`" in the chat explicitly triggers the `cp scp` workflow. Ensure that Copilot is configured to recognize this command and execute the workflow as described.
 
 ## Key Features
 

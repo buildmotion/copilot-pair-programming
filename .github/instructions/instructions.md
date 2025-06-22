@@ -206,12 +206,12 @@ breaking change: the authentication module now requires a new environment variab
 
 ## General Guidelines
 
-- Use `log -c` as a directive for Copilot to log the last chat exchange to the `documentation/chats` folder. This is not a terminal command but an instruction for Copilot to follow the steps outlined in `chat-log.instructions.md`.
-- Use `log -r` to log to the `documentation/research` folder. Refer to `ai-troubleshooting.instructions.md` for systematic research logging protocols.
+- Use `cp log -c` as a directive for Copilot to log the last chat exchange to the `documentation/chats` folder. This is not a terminal command but an instruction for Copilot to follow the steps outlined in `chat-log.instructions.md`.
+- Use `cp log -r` to log to the `documentation/research` folder. Refer to `ai-troubleshooting.instructions.md` for systematic research logging protocols.
 - Always follow the specific instruction relevant to the task.
 - Use structured responses and markdown formatting for clarity.
 - Provide suggestions for improving prompts to enhance learning and context.
 
-### `x -scp` Command - Smart Commit & Push
+### `cp scp` Command - Smart Commit & Push
 
-Refer to the `scp.md` file for detailed instructions on using the `x -scp` workflow. This command automates the process of staging, committing, and pushing changes to a Git repository using GitHub Copilot.
+Refer to the `scp.md` file for detailed instructions on using the `cp scp` workflow. This command automates the process of staging, committing, and pushing changes to a Git repository using GitHub Copilot.
