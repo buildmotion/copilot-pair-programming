@@ -202,6 +202,94 @@ Speaker Notes:
 
 ---
 
+## 🚀 Advanced Capabilities & Use Cases (12 minutes)
+
+### Slide: Deep Dive into `@workspace`
+
+- **What is `@workspace`?**
+  - A prompt capability that leverages your entire project context.
+  - Ideal for answering questions like "What is this repository about?" or "Where is the main entry point?"
+
+<!-- 
+Speaker Notes:
+- Explain `@workspace` as a way to query the entire project context.
+- Show practical examples: "What is this repository about?" and "Where is the main entry point?"
+- Highlight its utility for onboarding new developers or understanding unfamiliar codebases.
+- Mention limitations: works best with well-structured projects.
+- Transition: "Now let’s see how it compares to `#codebase`."
+-->
+
+### Slide: Comparing `@workspace` and `#codebase`
+
+- **`@workspace`**: Context-aware, project-wide insights.
+- **`#codebase`**: Focused on specific files or folders.
+- **Use Cases**:
+  - `@workspace`: High-level understanding, onboarding.
+  - `#codebase`: Debugging, targeted exploration.
+
+<!-- 
+Speaker Notes:
+- Use a comparison table to highlight differences.
+- Provide examples for each: `@workspace` for project summaries, `#codebase` for debugging.
+- Emphasize that both are complementary tools.
+- Transition: "Let’s explore how these capabilities enhance test generation."
+-->
+
+### Slide: Enhancing Test Generation with Copilot
+
+- **Configuration for Nx/Angular/Jest**:
+  - Use `github.copilot.chat.testGeneration.instructions` in `settings.json`.
+  - Tailored for `apps` and `libs` structure.
+- **Benefits**:
+  - Automates repetitive test creation.
+  - Reduces boilerplate.
+  - Improves test coverage.
+
+<!-- 
+Speaker Notes:
+- Show configuration example from `copilot-test-generation-instructions.md`.
+- Highlight benefits: automation, reduced boilerplate, better coverage.
+- Mention challenges: requires clear project structure and naming conventions.
+- Transition: "Finally, let’s look at how Copilot integrates into your workflow."
+-->
+
+### Slide: Practical Workflow Integration
+
+- **Daily Use Cases**:
+  - Writing boilerplate code.
+  - Debugging and refactoring.
+  - Learning new frameworks.
+- **Tips**:
+  - Use `@workspace` for project-wide insights.
+  - Use `#codebase` for targeted exploration.
+
+<!-- 
+Speaker Notes:
+- Provide real-world examples: debugging, refactoring, learning.
+- Share tips for maximizing Copilot’s capabilities.
+- End with: "Copilot isn’t just a tool; it’s a partner in your development journey."
+-->
+
+---
+
+## 🎨 Image Prompts (Hidden Comments)
+
+<!-- 
+Image Prompt for `@workspace`:
+"Illustrate a developer querying their project with `@workspace`, showing a visual of project files and a highlighted summary." 
+
+Image Prompt for `#codebase`:
+"Depict a focused view of a single file being debugged with `#codebase`, showing code suggestions in action." 
+
+Image Prompt for Test Generation:
+"Show a developer configuring test generation in `settings.json`, with a visual of tests being auto-generated." 
+
+Image Prompt for Workflow Integration:
+"Illustrate a developer using Copilot for daily tasks, with icons representing debugging, refactoring, and learning." 
+-->
+
+---
+
 ## 💼 Real-World Use Cases (10 minutes)
 
 ### Slide: Industry Applications
