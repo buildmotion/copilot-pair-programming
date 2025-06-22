@@ -1,6 +1,17 @@
-# Beyond @u70comp1et3: Mastering AI Pair Programming with GitHub Copilot
+---
+marp: true
+theme: styles.css
+size: 16:9
+class: 
+  - lead
+  - invert
+---
 
-## Comprehensive Talk Outline - Microsoft Denver Developer Day
+# Beyond Autocomplete: Mastering AI Pair Programming with GitHub Copilot
+
+## Microsoft Denver Developer Day
+
+June 27, 2025
 
 <!-- 
 Total Duration: 50 minutes
@@ -11,9 +22,30 @@ Focus: Practical, hands-on approach with real-world examples
 
 ---
 
+## What we will cover
+
+### Key Topics
+
+1. **Introduction to GitHub Copilot**: What it is, how it works, and its evolution.
+2. **Core Features**: Autocomplete, Chat Integration, Comment-to-Code, Multi-file Awareness, Test Generation.
+3. **Live Demos**: Hands-on examples showcasing Copilot's capabilities.
+4. **Advanced Techniques**: Prompt engineering and workflow integration.
+5. **Security Considerations**: Best practices for safe AI-assisted coding.
+6. **Real-World Applications**: Industry use cases and success stories.
+
+<!-- 
+Speaker Notes:
+- Provide a roadmap for the session to set expectations.
+- Highlight the mix of theory, demos, and practical takeaways.
+- Emphasize the interactive nature of the presentation.
+- Mention that the session will cover both beginner-friendly and advanced topics.
+-->
+
+---
+
 ## 🎯 Opening Hook (5 minutes)
 
-### Slide: Title + Welcome
+### Title + Welcome
 
 - **"Beyond Autocomplete: Mastering AI Pair Programming with GitHub Copilot"**
 - Matt Vaughn - BuildMotion
@@ -27,7 +59,9 @@ Speaker Notes:
 - Promise practical takeaways they can use immediately
 -->
 
-### Slide: The Evolution of Developer Tools
+---
+
+### The Evolution of Developer Tools
 
 - **From Syntax Highlighting → IntelliSense → AI Pair Programming**
 - Show timeline: Text editors → IDEs → AI-assisted coding
@@ -44,7 +78,7 @@ Speaker Notes:
 
 ## 📚 Foundation & Context (8 minutes)
 
-### Slide: What is GitHub Copilot?
+### What is GitHub Copilot?
 
 - **AI-powered coding assistant** from GitHub & OpenAI
 - **Trained on billions of lines** of public code
@@ -62,7 +96,9 @@ Speaker Notes:
 - Mention it supports 40+ programming languages with varying degrees of proficiency
 -->
 
-### Slide: Brief History & Evolution
+---
+
+### Brief History & Evolution
 
 - **June 2021**: Preview launch (invitation only)
 - **June 2022**: General availability
@@ -79,7 +115,9 @@ Speaker Notes:
 - Connect to research: The tool has matured from experimental to production-ready in just 4 years
 -->
 
-### Slide: The Research Behind the Hype
+---
+
+### The Research Behind the Hype
 
 - **55.8% faster task completion** (GitHub/Keio University study)
 - **75% of developers feel more fulfilled** using Copilot
@@ -102,7 +140,7 @@ Speaker Notes:
 
 ## 🛠️ Getting Started - Live Demo (7 minutes)
 
-### Slide: Setup in Under 60 Seconds
+### Setup in Under 60 Seconds
 
 - **Live Demo**: Fresh VS Code installation
 
@@ -119,7 +157,9 @@ Speaker Notes:
 - Show the setup is truly under a minute
 -->
 
-### Slide: Your First Copilot Experience
+---
+
+### Your First Copilot Experience
 
 - **Live Demo**: Create a new JavaScript file
 - Type a comment: `// Function to calculate compound interest`
@@ -138,7 +178,7 @@ Speaker Notes:
 
 ## 🚀 Core Capabilities Deep Dive (12 minutes)
 
-### Slide: Copilot Modes & Features
+### Copilot Modes & Features
 
 | Feature | What It Does | When to Use |
 |---------|-------------|-------------|
@@ -155,7 +195,9 @@ Speaker Notes:
 - Set up for the upcoming demos
 -->
 
-### Live Demo: Autocomplete in Action
+---
+
+### Autocomplete in Action
 
 - **Demo**: Build a React component from scratch
 - Show how Copilot predicts entire JSX structures
@@ -173,7 +215,9 @@ Speaker Notes:
 - Time estimate: 3-4 minutes maximum to maintain audience engagement
 -->
 
-### Live Demo: Chat Integration
+---
+
+### Chat Integration
 
 - **Demo**: Select confusing code and ask Copilot Chat to explain
 - Ask: "How can I optimize this function?"
@@ -187,7 +231,9 @@ Speaker Notes:
 - Demonstrate both explanation and generation capabilities
 -->
 
-### Live Demo: Multi-file Awareness
+---
+
+### Multi-file Awareness
 
 - **Demo**: Create a utility function in one file
 - Show how Copilot suggests imports in another file
@@ -219,6 +265,8 @@ Speaker Notes:
 - Transition: "Now let’s see how it compares to `#codebase`."
 -->
 
+---
+
 ### Slide: Comparing `@workspace` and `#codebase`
 
 - **`@workspace`**: Context-aware, project-wide insights.
@@ -234,6 +282,8 @@ Speaker Notes:
 - Emphasize that both are complementary tools.
 - Transition: "Let’s explore how these capabilities enhance test generation."
 -->
+
+---
 
 ### Slide: Enhancing Test Generation with Copilot
 
@@ -252,6 +302,8 @@ Speaker Notes:
 - Mention challenges: requires clear project structure and naming conventions.
 - Transition: "Finally, let’s look at how Copilot integrates into your workflow."
 -->
+
+---
 
 ### Slide: Practical Workflow Integration
 
@@ -272,20 +324,26 @@ Speaker Notes:
 
 ---
 
-## 🎨 Image Prompts (Hidden Comments)
+### Slide: Custom Instructions in GitHub Copilot
+
+- **What are Custom Instructions?**
+  - Tailored prompts to guide Copilot's behavior.
+  - Define specific rules, preferences, or workflows.
+- **How to Use Them:**
+  - Configure in `.github/instructions/` directory.
+  - Apply to specific files or entire projects.
+- **Benefits:**
+  - Improve code consistency across teams.
+  - Automate repetitive tasks with precision.
+  - Enhance Copilot's understanding of project-specific needs.
 
 <!-- 
-Image Prompt for `@workspace`:
-"Illustrate a developer querying their project with `@workspace`, showing a visual of project files and a highlighted summary." 
-
-Image Prompt for `#codebase`:
-"Depict a focused view of a single file being debugged with `#codebase`, showing code suggestions in action." 
-
-Image Prompt for Test Generation:
-"Show a developer configuring test generation in `settings.json`, with a visual of tests being auto-generated." 
-
-Image Prompt for Workflow Integration:
-"Illustrate a developer using Copilot for daily tasks, with icons representing debugging, refactoring, and learning." 
+Speaker Notes:
+- Explain the concept of custom instructions as a way to tailor Copilot's behavior.
+- Show examples of instruction files (e.g., `nx.instructions.md`, `ai-troubleshooting.instructions.md`).
+- Highlight practical benefits like enforcing team standards and automating workflows.
+- Mention that instructions can be scoped to specific files or applied globally.
+- Transition: "Let’s see how these instructions can be leveraged in real-world scenarios."
 -->
 
 ---
@@ -312,6 +370,8 @@ Speaker Notes:
 - Transition: "Let me show you some of these use cases in action"
 -->
 
+---
+
 ### Live Demo: Documentation Generation
 
 - **Demo**: Take an undocumented function
@@ -326,6 +386,8 @@ Speaker Notes:
 - Show both inline docs and external documentation
 -->
 
+---
+
 ### Live Demo: Test Generation
 
 - **Demo**: Create unit tests for a complex function
@@ -339,6 +401,8 @@ Speaker Notes:
 - Show how Copilot thinks about edge cases
 - Demonstrate multiple testing approaches
 -->
+
+---
 
 ### Live Demo: Legacy Code Modernization
 
@@ -371,6 +435,8 @@ Speaker Notes:
 - Emphasize that better input leads to better output
 - These techniques separate beginners from power users
 -->
+
+---
 
 ### Live Demo: Prompt Engineering in Practice
 
@@ -406,6 +472,8 @@ Speaker Notes:
 - Connect to enterprise concerns: "This is why Business/Enterprise plans include governance controls"
 - Emphasize: "The goal is human-AI collaboration, not blind automation"
 -->
+
+---
 
 ### Live Demo: Security Review with Copilot
 
@@ -459,6 +527,8 @@ Speaker Notes:
 - Emphasize practical next steps
 - Connect back to the "beyond autocomplete" theme
 -->
+
+---
 
 ### Slide: Your Next Steps
 
