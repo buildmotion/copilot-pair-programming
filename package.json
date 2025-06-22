@@ -8,12 +8,23 @@
     "pdf": "marp presentation/comprehensive-talk-outline.md --pdf --allow-local-files --output \"presentation/Beyond-Autocomplete-GitHub-Copilot-Talk.pdf\"",
     "slides": "marp presentation/comprehensive-talk-outline.md --theme default --output presentation/comprehensive-talk-outline.html",
     "present": "cd presentation && marp comprehensive-talk-outline.md --watch --theme default",
-    "server": "cd presentation && marp . --server --port 8080 --theme default"
+    "server": "cd presentation && marp . --server --port 8080 --theme default",
+    "prepare": "husky install"
   },
   "repository": "git@github.com:buildmotion/copilot-pair-programming.git",
   "author": "Matt Vaughn <matt.vaughn@buildmotion.com>",
   "license": "MIT",
   "dependencies": {
     "@marp-team/marp-cli": "4.2.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7"
   }
 }

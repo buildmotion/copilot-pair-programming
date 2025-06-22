@@ -1,5 +1,5 @@
 ---
-applyTo: '**'
+applyTo: "**"
 ---
 
 # Enhanced AI Assistant Instructions for Code Troubleshooting
@@ -77,10 +77,10 @@ ROOT CAUSE ANALYSIS:
 
 ```typescript
 // REQUIRED: Add diagnostic logging at key points
-console.log('🔍 [DEBUG] Method entry:', { param1, param2 });
-console.log('🔍 [DEBUG] State before:', this.currentState);
-console.log('🔍 [DEBUG] Operation result:', result);
-console.log('🔍 [DEBUG] State after:', this.currentState);
+console.log("🔍 [DEBUG] Method entry:", { param1, param2 });
+console.log("🔍 [DEBUG] State before:", this.currentState);
+console.log("🔍 [DEBUG] Operation result:", result);
+console.log("🔍 [DEBUG] State after:", this.currentState);
 ```
 
 **Key logging points:**
