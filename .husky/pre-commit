@@ -1,0 +1,42 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit validation..."
+
+# Test AI instruction compliance
+if [ -f "./test-copilot-instructions.sh" ]; then
+    echo "Validating AI pattern instructions..."
+    ./test-copilot-instructions.sh
+    if [ $? -ne 0 ]; then
+        echo "❌ AI pattern instruction validation failed"
+        exit 1
+    fi
+else
+    echo "⚠️  Instruction compliance test not found"
+fi
+
+# Check for antipatterns in staged markdown files
+staged_md_files=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
+if [ -n "$staged_md_files" ]; then
+    echo "Checking staged markdown files for antipatterns..."
+    
+    # Check each staged markdown file for antipatterns
+    for file in $staged_md_files; do
+        if [ -f "$file" ]; then
+            # Look for antipatterns but exclude lines that contain "grep" (command examples)
+            violations=$(grep -n "isn't just\|not just\|more than just\|not merely" "$file" | grep -v "grep" | head -5)
+            if [ -n "$violations" ]; then
+                echo "❌ Found antipattern in staged file: $file"
+                echo "   Lines with expectation-subversion patterns:"
+                echo "$violations"
+                echo "   Please remove these patterns before committing"
+                exit 1
+            fi
+        fi
+    done
+    echo "✅ No antipatterns found in staged files"
+else
+    echo "📝 No markdown files staged for commit"
+fi
+
+echo "✅ Pre-commit validation passed"
