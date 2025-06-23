@@ -154,7 +154,7 @@ When working with AI pattern instruction files:
 1. **Test instruction compliance** before committing
 
    ```bash
-   ./test-copilot-instructions.sh
+   ./.github/scripts/test-copilot-instructions.sh
    ```
 
 2. **Validate antipattern elimination**
@@ -232,7 +232,7 @@ Before pushing changes:
 echo "feat: your message" | npx commitlint
 
 # Test instruction compliance
-./test-copilot-instructions.sh
+./.github/scripts/test-copilot-instructions.sh
 
 # Check staged changes
 git diff --staged

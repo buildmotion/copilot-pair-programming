@@ -4,9 +4,9 @@
 echo "🔍 Running pre-commit validation..."
 
 # Test AI instruction compliance
-if [ -f "./test-copilot-instructions.sh" ]; then
+if [ -f "./.github/scripts/test-copilot-instructions.sh" ]; then
     echo "Validating AI pattern instructions..."
-    ./test-copilot-instructions.sh
+    ./.github/scripts/test-copilot-instructions.sh
     if [ $? -ne 0 ]; then
         echo "❌ AI pattern instruction validation failed"
         exit 1
