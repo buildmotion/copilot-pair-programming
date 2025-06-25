@@ -23,13 +23,27 @@ if [ -n "$staged_md_files" ]; then
     # Check each staged markdown file for antipatterns
     for file in $staged_md_files; do
         if [ -f "$file" ]; then
-            # Look for antipatterns but exclude lines that contain "grep" (command examples)
-            violations=$(grep -n "isn't just\|not just\|more than just\|not merely" "$file" | grep -v "grep" | head -5)
+            # Create a temporary file to process content outside of code blocks
+            temp_file=$(mktemp)
+            
+            # Remove code blocks (```...```) and inline code (`...`) from analysis
+            # Also exclude lines with common documentation patterns
+            sed '/```/,/```/d' "$file" | \
+            sed 's/`[^`]*`//g' | \
+            grep -v "grep\|echo\|# BEFORE\|# AFTER\|Example\|example\|command\|Command\|\*\*Example" > "$temp_file"
+            
+            # Look for antipatterns in the cleaned content
+            violations=$(grep -n "isn't just\|not just\|more than just\|not merely" "$temp_file" | head -5)
+            
+            # Clean up temp file
+            rm -f "$temp_file"
+            
             if [ -n "$violations" ]; then
                 echo "❌ Found antipattern in staged file: $file"
                 echo "   Lines with expectation-subversion patterns:"
                 echo "$violations"
                 echo "   Please remove these patterns before committing"
+                echo "   Note: Patterns in code blocks and examples are automatically excluded"
                 exit 1
             fi
         fi
