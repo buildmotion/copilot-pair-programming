@@ -12,11 +12,11 @@ applyTo: '**'
 5. **Presentation Style Instructions**: Refer to `presentation-snarky-style.instructions.md` for AI writing guidelines and antipattern elimination.
 6. **Nx Workspace Instructions**: Refer to `nx.instructions.md` for Nx-specific guidelines.
 
-## General Guidelines
+## Copilot Directives
 
-- Use `cp log -c` as a directive for Copilot to log the last chat exchange to the `documentation/chats` folder. Copilot should execute this directive immediately without requiring any manual clarification or confirmation. Follow the steps outlined in `chat-log.instructions.md`.
-- Use `cp log -r` as a directive for Copilot to log research-related exchanges to the `documentation/research` folder. Copilot should execute this directive immediately without requiring any manual clarification or confirmation. Follow the steps outlined in `ai-troubleshooting.instructions.md`.
-- Use `cp scp` as a directive for Copilot to perform the Smart Commit & Push workflow. Copilot should execute this directive immediately without requiring any manual clarification or confirmation. All commit messages must strictly comply with the Conventional Commit standard as outlined in `git-workflow.instructions.md`.
+- **`cp scp`**: Smart Commit & Push - stage all changes, generate conventional commit message, and push. See [commit-and-push.prompt.md](../prompts/commit-and-push.prompt.md) for detailed behavior.
+- **`cp log -c`**: Log chat exchange to `documentation/chats/` folder. Follow steps in `chat-log.instructions.md`.
+- **`cp log -r`**: Log research exchange to `documentation/research/` folder. Follow steps in `ai-troubleshooting.instructions.md`.
 
 ## Git Workflow Integration
 
