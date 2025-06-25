@@ -14,6 +14,21 @@
   "repository": "git@github.com:buildmotion/copilot-pair-programming.git",
   "author": "Matt Vaughn <matt.vaughn@buildmotion.com>",
   "license": "MIT",
+  "copilot": {
+    "instructions": {
+      "activeStyles": {
+        "presentation": "snarky",
+        "documentation": "tutorial",
+        "code": "readable",
+        "commits": "conventional"
+      },
+      "styleContexts": {
+        "presentation/": "presentation-style-snarky.instructions.md",
+        "documentation/": "documentation-style-tutorial.instructions.md",
+        ".github/": "documentation-style-reference.instructions.md"
+      }
+    }
+  },
   "dependencies": {
     "@marp-team/marp-cli": "4.2.0"
   },

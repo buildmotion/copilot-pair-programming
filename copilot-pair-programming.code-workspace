@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    // Copilot style preferences for this workspace
+    "copilot.instructions.activeStyles": {
+      "presentation": "snarky",
+      "documentation": "tutorial", 
+      "code": "readable",
+      "commits": "conventional"
+    },
+    "copilot.instructions.contextMapping": {
+      "presentation/**": ["presentation-style-snarky.instructions.md"],
+      "documentation/**": ["documentation-style-tutorial.instructions.md"],
+      "src/**": ["code-style-readable.instructions.md"],
+      ".github/**": ["documentation-style-reference.instructions.md"]
+    },
+    // File associations for style application
+    "files.associations": {
+      "*.presentation.md": "markdown",
+      "*.instructions.md": "markdown"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "github.copilot",
+      "github.copilot-chat"
+    ]
+  }
+}

@@ -13,7 +13,7 @@ This instruction provides specific guidance for configuring, maintaining, and tr
 This instruction focuses specifically on husky technical configuration and troubleshooting. For related topics:
 
 - **Git workflow and conventional commits**: [`git-workflow.instructions.md`](git-workflow.instructions.md) - Overall git best practices
-- **Copilot SCP automation**: [`scp.md`](scp.md) - Automated commit/push workflow
+- **Copilot SCP automation**: [`copilot-smart-commit-push.instructions.md`](copilot-smart-commit-push.instructions.md) - Automated commit/push workflow
 - **Main instruction index**: [`instructions.md`](instructions.md)
 
 ## Hook Configuration Best Practices

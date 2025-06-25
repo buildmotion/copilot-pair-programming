@@ -9,12 +9,13 @@ applyTo: '**'
 2. **AI Troubleshooting Instructions**: Refer to `ai-troubleshooting.instructions.md` for systematic debugging and troubleshooting protocols.
 3. **Git Workflow Instructions**: Refer to `git-workflow.instructions.md` for conventional commit standards and git best practices.
 4. **Husky Hook Management**: Refer to `husky-hook-management.instructions.md` for git hook configuration and troubleshooting.
-5. **Presentation Style Instructions**: Refer to `presentation-snarky-style.instructions.md` for AI writing guidelines and antipattern elimination.
-6. **Nx Workspace Instructions**: Refer to `nx.instructions.md` for Nx-specific guidelines.
+5. **Copilot Smart Commit & Push**: Refer to `copilot-smart-commit-push.instructions.md` for automated git workflow using the `cp scp` command.
+6. **Presentation Style Instructions**: Refer to `presentation-style-snarky.instructions.md` for AI writing guidelines and antipattern elimination.
+7. **Nx Workspace Instructions**: Refer to `nx.instructions.md` for Nx-specific guidelines.
 
 ## Copilot Directives
 
-- **`cp scp`**: Smart Commit & Push - stage all changes, generate conventional commit message, and push. See [commit-and-push.prompt.md](../prompts/commit-and-push.prompt.md) for detailed behavior.
+- **`cp scp`**: Smart Commit & Push - stage all changes, generate conventional commit message, and push. Uses [copilot-smart-commit-push.instructions.md](copilot-smart-commit-push.instructions.md) for behavior context and [commit-and-push.prompt.md](../prompts/commit-and-push.prompt.md) for execution details.
 - **`cp log -c`**: Log chat exchange to `documentation/chats/` folder. Follow steps in `chat-log.instructions.md`.
 - **`cp log -r`**: Log research exchange to `documentation/research/` folder. Follow steps in `ai-troubleshooting.instructions.md`.
 
