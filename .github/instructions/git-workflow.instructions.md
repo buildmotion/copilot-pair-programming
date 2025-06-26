@@ -12,7 +12,7 @@ This instruction provides comprehensive guidance for working with git in this re
 
 This instruction focuses on git workflow and conventional commit standards. For related topics:
 
-- **Copilot SCP automation**: [`scp.md`](scp.md) - Automated commit/push workflow
+- **Copilot SCP automation**: [`copilot-smart-commit-push.instructions.md`](copilot-smart-commit-push.instructions.md) - Automated commit/push workflow
 - **Husky hook configuration**: [`husky-hook-management.instructions.md`](husky-hook-management.instructions.md) - Technical hook setup and troubleshooting
 - **Main instruction index**: [`instructions.md`](instructions.md)
 
@@ -154,7 +154,7 @@ When working with AI pattern instruction files:
 1. **Test instruction compliance** before committing
 
    ```bash
-   ./test-copilot-instructions.sh
+   ./.github/scripts/test-copilot-instructions.sh
    ```
 
 2. **Validate antipattern elimination**
@@ -232,7 +232,7 @@ Before pushing changes:
 echo "feat: your message" | npx commitlint
 
 # Test instruction compliance
-./test-copilot-instructions.sh
+./.github/scripts/test-copilot-instructions.sh
 
 # Check staged changes
 git diff --staged

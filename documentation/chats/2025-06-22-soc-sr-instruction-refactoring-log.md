@@ -7,7 +7,7 @@
 
 Complete Separation of Concerns (SoC) and Single Responsibility (SR) review of instruction files to eliminate duplication and ensure clear boundaries between:
 
-- `scp.md` - Copilot SCP automation workflow
+- `copilot-smart-commit-push.instructions.md` - Copilot SCP automation workflow
 - `git-workflow.instructions.md` - Git workflow and conventional commits  
 - `husky-hook-management.instructions.md` - Husky technical configuration
 
@@ -17,7 +17,7 @@ Complete Separation of Concerns (SoC) and Single Responsibility (SR) review of i
 
 **Conventional Commit Standards:**
 
-- ❌ Duplicated in `scp.md` and `git-workflow.instructions.md`
+- ❌ Duplicated in `copilot-smart-commit-push.instructions.md` and `git-workflow.instructions.md`
 - ❌ Both files had complete conventional commit type lists and examples
 
 **Husky Configuration:**
@@ -27,12 +27,12 @@ Complete Separation of Concerns (SoC) and Single Responsibility (SR) review of i
 
 **Git Troubleshooting:**
 
-- ❌ General git issues in `scp.md`
+- ❌ General git issues in `copilot-smart-commit-push.instructions.md`
 - ❌ Overlapping troubleshooting in `git-workflow.instructions.md`
 
 ## Refactoring Changes
 
-### `scp.md` - Streamlined for Single Responsibility
+### `copilot-smart-commit-push.instructions.md` - Streamlined for Single Responsibility
 
 **Removed:**
 
@@ -119,7 +119,7 @@ All three files now include:
 
 | File | Single Responsibility | Key Sections |
 |------|----------------------|--------------|
-| `scp.md` | Copilot SCP automation workflow | SCP commands, Copilot integration, automation troubleshooting |
+| `copilot-smart-commit-push.instructions.md` | Copilot SCP automation workflow | SCP commands, Copilot integration, automation troubleshooting |
 | `git-workflow.instructions.md` | Git workflow and conventional commits | Commit standards, workflow best practices, quality integration |
 | `husky-hook-management.instructions.md` | Husky technical configuration | Hook setup, configuration, technical troubleshooting |
 

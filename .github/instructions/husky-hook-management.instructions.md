@@ -13,7 +13,7 @@ This instruction provides specific guidance for configuring, maintaining, and tr
 This instruction focuses specifically on husky technical configuration and troubleshooting. For related topics:
 
 - **Git workflow and conventional commits**: [`git-workflow.instructions.md`](git-workflow.instructions.md) - Overall git best practices
-- **Copilot SCP automation**: [`scp.md`](scp.md) - Automated commit/push workflow
+- **Copilot SCP automation**: [`copilot-smart-commit-push.instructions.md`](copilot-smart-commit-push.instructions.md) - Automated commit/push workflow
 - **Main instruction index**: [`instructions.md`](instructions.md)
 
 ## Hook Configuration Best Practices
@@ -32,7 +32,7 @@ echo "🔍 Running pre-commit checks..."
 # Example checks (customize as needed):
 # npm run lint
 # npm run test
-# ./test-copilot-instructions.sh
+# ./.github/scripts/test-copilot-instructions.sh
 
 echo "✅ Pre-commit validation passed"
 ```
@@ -193,8 +193,8 @@ Please remove the following two lines from .husky/pre-commit:
 echo "🔍 Running AI pattern instruction validation..."
 
 # Test instruction compliance
-if [ -f "./test-copilot-instructions.sh" ]; then
-    ./test-copilot-instructions.sh
+if [ -f "./.github/scripts/test-copilot-instructions.sh" ]; then
+    ./.github/scripts/test-copilot-instructions.sh
     if [ $? -ne 0 ]; then
         echo "❌ AI pattern instruction validation failed"
         exit 1
@@ -260,9 +260,9 @@ if command -v npx >/dev/null 2>&1; then
 fi
 
 # Test AI instruction compliance
-if [ -f "./test-copilot-instructions.sh" ]; then
+if [ -f "./.github/scripts/test-copilot-instructions.sh" ]; then
     echo "Validating AI pattern instructions..."
-    ./test-copilot-instructions.sh
+    ./.github/scripts/test-copilot-instructions.sh
 fi
 
 echo "✅ Pre-commit validation passed"

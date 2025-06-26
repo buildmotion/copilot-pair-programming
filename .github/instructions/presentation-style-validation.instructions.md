@@ -1,4 +1,4 @@
-# Copilot Instruction Compliance Testing Framework
+# Presentation Style Validation Instructions
 
 ## Purpose
 

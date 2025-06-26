@@ -1,0 +1,36 @@
+# Copilot Configuration for Repository
+# This file defines active instruction sets and styles
+
+active_instructions:
+  # Core instructions (always active)
+  core:
+    - instructions.md
+    - git-workflow.instructions.md
+    - ai-troubleshooting.instructions.md
+    - husky-hook-management.instructions.md
+    - chat-log.instructions.md
+
+  # Style instructions (context-dependent)
+  styles:
+    presentation: presentation-style-snarky.instructions.md
+    documentation: documentation-style-tutorial.instructions.md
+    code: code-style-readable.instructions.md
+    commits: git-workflow.instructions.md
+
+# Style contexts - when to apply which styles
+contexts:
+  presentation/:
+    - presentation-style-snarky.instructions.md
+  documentation/:
+    - documentation-style-tutorial.instructions.md
+  src/:
+    - code-style-readable.instructions.md
+  .github/:
+    - documentation-style-reference.instructions.md
+
+# Project-specific preferences
+preferences:
+  default_presentation_style: snarky
+  default_code_style: readable
+  commit_style: conventional
+  documentation_style: tutorial

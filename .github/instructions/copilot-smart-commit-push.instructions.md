@@ -1,3 +1,7 @@
+---
+applyTo: "**"
+---
+
 # `cp scp` (Smart Commit & Push) Workflow
 
 ## Overview
@@ -10,11 +14,16 @@ This instruction focuses specifically on the Copilot SCP automation workflow. Fo
 
 - **Git workflow and conventional commits**: [`git-workflow.instructions.md`](git-workflow.instructions.md)
 - **Husky hook configuration and troubleshooting**: [`husky-hook-management.instructions.md`](husky-hook-management.instructions.md)
+- **Detailed execution template**: [`../prompts/commit-and-push.prompt.md`](../prompts/commit-and-push.prompt.md)
 - **Main instruction index**: [`instructions.md`](instructions.md)
 
 ## How to Use
 
-Simply type **"`cp scp`"** in the chat with GitHub Copilot. This is a direct command to Copilot that triggers the `cp scp` workflow. Copilot will:
+Simply type **"`cp scp`"** in the chat with GitHub Copilot. This is a direct command to Copilot that triggers the `cp scp` workflow. 
+
+**Alternative**: You can also use the detailed prompt template directly with `#prompt commit-and-push.prompt.md` for more explicit control over the execution steps.
+
+Copilot will:
 
 1. Generate a single command line that performs all the necessary Git operations
 2. Execute this command automatically

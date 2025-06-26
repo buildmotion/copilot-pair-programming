@@ -9,14 +9,15 @@ applyTo: '**'
 2. **AI Troubleshooting Instructions**: Refer to `ai-troubleshooting.instructions.md` for systematic debugging and troubleshooting protocols.
 3. **Git Workflow Instructions**: Refer to `git-workflow.instructions.md` for conventional commit standards and git best practices.
 4. **Husky Hook Management**: Refer to `husky-hook-management.instructions.md` for git hook configuration and troubleshooting.
-5. **Presentation Style Instructions**: Refer to `presentation-snarky-style.instructions.md` for AI writing guidelines and antipattern elimination.
-6. **Nx Workspace Instructions**: Refer to `nx.instructions.md` for Nx-specific guidelines.
+5. **Copilot Smart Commit & Push**: Refer to `copilot-smart-commit-push.instructions.md` for automated git workflow using the `cp scp` command.
+6. **Presentation Style Instructions**: Refer to `presentation-style-snarky.instructions.md` for AI writing guidelines and antipattern elimination.
+7. **Nx Workspace Instructions**: Refer to `nx.instructions.md` for Nx-specific guidelines.
 
-## General Guidelines
+## Copilot Directives
 
-- Use `cp log -c` as a directive for Copilot to log the last chat exchange to the `documentation/chats` folder. Copilot should execute this directive immediately without requiring any manual clarification or confirmation. Follow the steps outlined in `chat-log.instructions.md`.
-- Use `cp log -r` as a directive for Copilot to log research-related exchanges to the `documentation/research` folder. Copilot should execute this directive immediately without requiring any manual clarification or confirmation. Follow the steps outlined in `ai-troubleshooting.instructions.md`.
-- Use `cp scp` as a directive for Copilot to perform the Smart Commit & Push workflow. Copilot should execute this directive immediately without requiring any manual clarification or confirmation. All commit messages must strictly comply with the Conventional Commit standard as outlined in `git-workflow.instructions.md`.
+- **`cp scp`**: Smart Commit & Push - stage all changes, generate conventional commit message, and push. Uses [copilot-smart-commit-push.instructions.md](copilot-smart-commit-push.instructions.md) for behavior context and [commit-and-push.prompt.md](../prompts/commit-and-push.prompt.md) for execution details.
+- **`cp log -c`**: Log chat exchange to `documentation/chats/` folder. Follow steps in `chat-log.instructions.md`.
+- **`cp log -r`**: Log research exchange to `documentation/research/` folder. Follow steps in `ai-troubleshooting.instructions.md`.
 
 ## Git Workflow Integration
 
