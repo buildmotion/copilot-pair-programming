@@ -30,6 +30,9 @@
     }
   },
   "dependencies": {
+    "@angular/common": "^20.0.5",
+    "@angular/core": "^20.0.5",
+    "@angular/router": "^20.0.5",
     "@marp-team/marp-cli": "4.2.0"
   },
   "commitlint": {
@@ -40,6 +43,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@types/angular": "^1.8.9",
     "husky": "^9.1.7"
   }
 }
