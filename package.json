@@ -7,7 +7,7 @@
     "marp:html": "marp presentation/denver-dev-day.md --output presentation/denver-dev-day.html",
     "marp:pdf": "marp presentation/denver-dev-day.md --pdf --allow-local-files --output \"presentation/denver-dev-day.pdf\"",
     "marp:slides": "marp presentation/denver-dev-day.md --theme default --output presentation/denver-dev-day.html",
-    "marp:present": "cd presentation && yarn marp:html --watch --theme default",
+    "marp:present": "cd presentation && yarn marp:html --watch",
     "marp:serve": "cd presentation && marp . --server --port 8080 --theme default",
     "prepare": "husky install"
   },
@@ -30,6 +30,9 @@
     }
   },
   "dependencies": {
+    "@angular/common": "^20.0.5",
+    "@angular/core": "^20.0.5",
+    "@angular/router": "^20.0.5",
     "@marp-team/marp-cli": "4.2.0"
   },
   "commitlint": {
@@ -38,8 +41,13 @@
     ]
   },
   "devDependencies": {
+    "@angular-builders/jest": "^20.0.0",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "husky": "^9.1.7"
+    "@types/angular": "^1.8.9",
+    "@types/jest": "^30.0.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.0"
   }
 }

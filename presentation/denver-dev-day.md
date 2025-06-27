@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: styles.css
+theme: styles.scss
 size: 16:9
 class:
   - lead
@@ -9,6 +9,8 @@ class:
 # Mastering AI Pair Programming with GitHub Copilot
 
 ## Microsoft Denver Developer Day
+
+- GitHub: https://github.com/buildmotion/copilot-pair-programming
 
 June 27, 2025
 
