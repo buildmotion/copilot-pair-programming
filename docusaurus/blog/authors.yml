@@ -1,0 +1,17 @@
+development-team:
+  name: Development Team
+  title: AI Pair Programming Researchers
+  url: https://github.com/buildmotion/copilot-pair-programming
+  image_url: https://github.com/buildmotion.png
+
+matt-vaughn:
+  name: Matt Vaughn
+  title: Angular Architect & Author - BuildMotion
+  url: https://linkedin.com/in/buildmotion
+  image_url: https://github.com/buildmotion.png
+
+copilot-assistant:
+  name: GitHub Copilot
+  title: AI Pair Programming Assistant
+  url: https://github.com/features/copilot
+  image_url: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
