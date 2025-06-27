@@ -19,7 +19,7 @@ June 27, 2025
 Total Duration: 50 minutes
 Talk Type: Live Demo & Interactive Presentation
 Target Audience: Microsoft Developer Conference Attendees
-Session Level: Intermediate
+Session Level: Beginner, Intermediate, and Advanced (ALL LEVELS)
 -->
 
 ---
