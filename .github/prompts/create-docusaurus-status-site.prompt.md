@@ -1,5 +1,8 @@
 # Create Docusaurus Status Website - Comprehensive Conference Resource Portal
 
+> Chain of Thought Prompt: This prompt will guide the creation of a Docusaurus static website that serves as a post-conference resource portal for attendees of the "Beyond Autocomplete: Mastering AI Pair Programming with GitHub Copilot" presentation at Microsoft Denver Developer Day 2025. The site will be structured to provide easy access to all relevant content, including markdown files, research, documentation, instructions, chat logs, and presentations.
+
+
 ## Overview
 Create a comprehensive Docusaurus static website to serve as a post-conference resource portal for attendees of "Beyond Autocomplete: Mastering AI Pair Programming with GitHub Copilot" presentation at Microsoft Denver Developer Day 2025.
 

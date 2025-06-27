@@ -7,7 +7,7 @@
     "marp:html": "marp presentation/denver-dev-day.md --output presentation/denver-dev-day.html",
     "marp:pdf": "marp presentation/denver-dev-day.md --pdf --allow-local-files --output \"presentation/denver-dev-day.pdf\"",
     "marp:slides": "marp presentation/denver-dev-day.md --theme default --output presentation/denver-dev-day.html",
-    "marp:present": "cd presentation && yarn marp:html --watch --theme default",
+    "marp:present": "cd presentation && yarn marp:html --watch",
     "marp:serve": "cd presentation && marp . --server --port 8080 --theme default",
     "prepare": "husky install"
   },
