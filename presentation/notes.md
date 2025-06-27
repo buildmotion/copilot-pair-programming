@@ -1,26 +1,43 @@
 # Notes
 
 - Introduction to Github Copilot
-  - what it is
-  - how it works
-  - evolution
+  - What is GitHub Copilot?
+    - AI-powered coding assistant
+    - Context-aware, multi-language support
+    - IDE integration
+  - How it works
+  - Evolution
 - Core Features (Editor)
   - Auto-Completion (code, markdown, prompts)
   - Explain, Fix, Review & Comment
   - Generate Docs
   - Generate Tests
-- Copilot Modes
-  - Ask
-  - Edit
-  - Agent
-- Context Awareness
-  - Code Selection
-  - Single file understanding
-  - Multi-file understanding
-  - Project structure awareness
-    - @workspace
-    - #codebase
-- Models
-- Tools
-  - MCP
+- Prompt Engineering
+- Advanced Techniques
+  - Copilot Modes
+    - Ask
+    - Edit
+    - Agent
+  - Context Awareness
+    - Code Selection
+    - Single file understanding
+    - Multi-file understanding
+    - Project structure awareness
+      - @workspace
+      - #codebase
+  - Tools
+    - Instructions
+      - Automation
+      - Directives
+    - Prompts
+    - MCP
+  - Models
+    - GPT-4o
+    - GPT-4.1
+    - Premium Models
+      - Claude Sonnet 3.5
+      - Claude Sonnet 3.7
+      - Claude Sonnet 4
+      - Gemini 2.5 Pro (Preview)
+      - 04-mini (Preview)
   
