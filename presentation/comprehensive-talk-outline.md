@@ -103,7 +103,7 @@ Speaker Notes:
 <!-- 
 Speaker Notes:
 - *deadpan delivery* "It's not magic, folks - it's just trained on billions of lines of code from GitHub repositories. You know... all that code you uploaded thinking it was 'private'?" *pause for effect* 
-- *slight smirk* "Microsoft bought GitHub in 2018 for 7.5 billion. Wonder how they got all that sweet, sweet training data, right?? I'm just saying..." *shrug*
+- *slight smirk* "Microsoft bought GitHub in 2018 for 7.5 billion (stock). Wonder how they got all that sweet, sweet training data, right?? I'm just saying..." *shrug*
 - *lean forward conspiratorially* "This isn't your grandpa's IntelliSense. This thing reads your entire project like it's binge-watching Netflix - understands your imports, your patterns, probably judges your variable names..."
 - *raise eyebrow* "They say it's 'context-aware.' Translation: it knows when you're about to write another nested ternary operator and judges you accordingly"
 - *serious tone shift* "But seriously though - this isn't glorified autocomplete. It's an AI that understands coding context better than most developers understand their own codebase" 
