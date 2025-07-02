@@ -184,7 +184,7 @@ const config: Config = {
             },
             {
               label: 'LinkedIn: Matt Vaughn',
-              href: 'https://linkedin.com/in/buildmotion',
+              href: 'https://linkedin.com/in/matt-vaughn',
             },
           ],
         },
