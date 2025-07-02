@@ -44,6 +44,8 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'research-analysis/ai-pattern-instructions',
+        'research-analysis/antipattern-detection-system',
+        'research-analysis/ai-instruction-testing-framework',
       ],
     },
   ],
@@ -78,6 +80,8 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'ai-instructions/framework-overview',
+        'ai-instructions/smart-commit-push',
+        'ai-instructions/style-management',
       ],
     },
   ],
