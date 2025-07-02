@@ -12,6 +12,8 @@ date: 2025-06-22
 
 This development session demonstrates the real-world execution of our Smart Commit and Push (SCP) workflow - an automated system that analyzes code changes, generates conventional commit messages, and pushes updates using GitHub Copilot intelligence.
 
+<!-- truncate -->
+
 ## The Challenge
 
 Traditional git workflows require developers to:
