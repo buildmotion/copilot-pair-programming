@@ -32,22 +32,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: docusaurus/package-lock.json
-
       - name: Install dependencies
-        run: |
-          cd docusaurus
-          npm ci
+        working-directory: ./docusaurus
+        run: yarn install --frozen-lockfile
 
       - name: Build Docusaurus site
-        run: |
-          cd docusaurus
-          npm run build
+        working-directory: ./docusaurus
+        run: yarn build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
