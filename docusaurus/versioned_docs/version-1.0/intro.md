@@ -1,18 +1,3 @@
----
-title: Welcome to the AI Pair Programming Resource Portal
-description: Comprehensive resource portal for mastering AI pair programming with GitHub Copilot
-keywords:
-  - AI pair programming
-  - GitHub Copilot
-  - documentation
-  - revision system
-  - version control
-author: AI Pair Programming Team
-last_update:
-  date: 2024-12-26
-  author: AI Pair Programming Team
----
-
 # Welcome to the AI Pair Programming Resource Portal
 
 ## Beyond Autocomplete: Mastering GitHub Copilot

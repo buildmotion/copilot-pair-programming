@@ -81,6 +81,24 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+
+  // Resources and References
+  resourcesSidebar: [
+    {
+      type: 'category',
+      label: '📚 Resources & References',
+      link: {
+        type: 'generated-index',
+        title: 'Learning Resources and System Documentation',
+        description: 'Educational resources, system documentation, and reference materials',
+        slug: '/resources',
+      },
+      items: [
+        'resources/learning-resources',
+        'resources/revision-system',
+      ],
+    },
+  ],
 };
 
 export default sidebars;
