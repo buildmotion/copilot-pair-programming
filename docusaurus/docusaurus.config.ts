@@ -115,46 +115,71 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Getting Started',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Implementation Guides',
+              to: '/docs/implementation-guides/git-workflow-setup',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'AI Instructions Framework',
+              to: '/docs/ai-instructions/framework-overview',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Essential YouTube Channels',
           items: [
             {
-              label: 'Blog',
+              label: '📺 VS Code YouTube',
+              href: 'https://www.youtube.com/@code',
+            },
+            {
+              label: '📺 GitHub YouTube',
+              href: 'https://www.youtube.com/@GitHub',
+            },
+          ],
+        },
+        {
+          title: 'Community & Support',
+          items: [
+            {
+              label: 'GitHub Repository',
+              href: 'https://github.com/buildmotion/copilot-pair-programming',
+            },
+            {
+              label: 'Stack Overflow - Copilot',
+              href: 'https://stackoverflow.com/questions/tagged/github-copilot',
+            },
+            {
+              label: 'LinkedIn: Matt Vaughn',
+              href: 'https://linkedin.com/in/buildmotion',
+            },
+          ],
+        },
+        {
+          title: 'More Resources',
+          items: [
+            {
+              label: 'Development Sessions',
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Learning Resources',
+              to: '/docs/resources/learning-resources',
+            },
+            {
+              label: 'Conference Talk',
+              to: '/docs/conference-talk/getting-started',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Beyond Autocomplete: AI Pair Programming Resources. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
