@@ -22,6 +22,8 @@ Traditional git workflows require developers to:
 
 Our SCP workflow solves this by automating the entire process with a single command: `cp scp`
 
+<!-- truncate -->
+
 ## Session Walkthrough
 
 ### Initial Request

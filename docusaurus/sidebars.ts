@@ -27,6 +27,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'conference-talk/overview',
         'conference-talk/getting-started',
+        'conference-talk/comprehensive-outline',
       ],
     },
   ],
