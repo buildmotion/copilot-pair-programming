@@ -1,0 +1,63 @@
+{
+  "conferenceTalkSidebar": [
+    {
+      "type": "category",
+      "label": "🎯 Conference Talk",
+      "link": {
+        "type": "generated-index",
+        "title": "Beyond Autocomplete: Mastering AI Pair Programming",
+        "description": "Comprehensive conference presentation content and resources",
+        "slug": "/conference-talk"
+      },
+      "items": [
+        "conference-talk/overview",
+        "conference-talk/getting-started"
+      ]
+    }
+  ],
+  "researchSidebar": [
+    {
+      "type": "category",
+      "label": "🔬 Research & Analysis",
+      "link": {
+        "type": "generated-index",
+        "title": "Technical Research and Analysis",
+        "description": "Behind-the-scenes research, patterns, and technical decisions",
+        "slug": "/research-analysis"
+      },
+      "items": [
+        "research-analysis/ai-pattern-instructions"
+      ]
+    }
+  ],
+  "guidesSidebar": [
+    {
+      "type": "category",
+      "label": "🛠️ Implementation Guides",
+      "link": {
+        "type": "generated-index",
+        "title": "Step-by-Step Implementation Guides",
+        "description": "Practical guides for setting up AI pair programming workflows",
+        "slug": "/implementation-guides"
+      },
+      "items": [
+        "implementation-guides/git-workflow-setup"
+      ]
+    }
+  ],
+  "instructionsSidebar": [
+    {
+      "type": "category",
+      "label": "📋 AI Instructions Framework",
+      "link": {
+        "type": "generated-index",
+        "title": "AI Instructions Framework",
+        "description": "Comprehensive system for controlling GitHub Copilot behavior",
+        "slug": "/ai-instructions"
+      },
+      "items": [
+        "ai-instructions/framework-overview"
+      ]
+    }
+  ]
+}

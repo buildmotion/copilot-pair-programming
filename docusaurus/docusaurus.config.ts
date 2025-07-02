@@ -46,9 +46,25 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/buildmotion/copilot-pair-programming/tree/main/docusaurus/',
+          // Enable versioning capabilities
+          includeCurrentVersion: true,
+          // Show last update info
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          // Enable revision tracking
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Current',
+              path: '',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
+          // Show last update info for blog posts
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -103,7 +119,18 @@ const config: Config = {
           position: 'left',
           label: '📋 Instructions',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'resourcesSidebar',
+          position: 'left',
+          label: '📚 Resources',
+        },
         {to: '/blog', label: '💬 Sessions', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
+        },
         {
           href: 'https://github.com/buildmotion/copilot-pair-programming',
           label: 'GitHub',
