@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Beyond Autocomplete: Mastering AI Pair Programming',
-  tagline: 'Comprehensive Resource Portal for GitHub Copilot Mastery',
+  title: 'Flamingo Coding with AI',
+  tagline: 'Stand tall, code smart - learn AI pair programming that makes you fly! 🦩',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -73,12 +73,17 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'AI Pair Programming Guide',
+      title: 'Flamingo Coding 🦩',
       logo: {
-        alt: 'GitHub Copilot Logo',
+        alt: 'Flamingo Coding Logo',
         src: 'img/logo.svg',
       },
       items: [
+        {
+          to: '/webinar',
+          label: '🦩 Free Webinar',
+          position: 'left',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'conferenceTalkSidebar',

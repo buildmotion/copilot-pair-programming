@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Fly High with AI 🦩',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn to code faster with GitHub Copilot! Like a flamingo standing tall,
+        you'll rise above coding challenges with smart AI helpers.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Simple Steps to Success 🦩',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Follow easy guides to master AI pair programming. No fancy words—just 
+        clear steps that help you code better, faster, and with more fun!
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Join the Flock 🦩',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Be part of a community that loves AI coding tools. Share tips, learn 
+        from others, and become a flamingo coder who stands out from the crowd!
       </>
     ),
   },
